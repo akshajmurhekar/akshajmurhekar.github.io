@@ -28,7 +28,7 @@ title: Academic Portfolio
         <div style="margin-top: 8px; margin-bottom: 16px;">
             <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" style="font-weight: 500;">Google Scholar</a> &middot; 
             <a href="https://linkedin.com/in/akshaj-murhekar" target="_blank" style="font-weight: 500;">LinkedIn</a> &middot; 
-            <a href="https://github.com/akshaj02" target="_blank" style="font-weight: 500;">GitHub</a> &middot; 
+            <a href="https://github.com/akshajmurhekar" target="_blank" style="font-weight: 500;">GitHub</a> &middot; 
             <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500;">Email</a>
         </div>
         
