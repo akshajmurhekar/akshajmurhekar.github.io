@@ -318,19 +318,22 @@ title: Academic Portfolio
     <script>
         (async function() {
             const viewPill = document.getElementById('portfolio-views');
-            const storageKey = 'akshajmurhekar_github_io_main_page';
             
-            // Check if this specific browser has visited before
-            const hasVisited = localStorage.getItem('has_visited_portfolio');
+            // RESET POINT: I appended '_v2' to the end of this key name. 
+            // Whenever you want to reset your counter to 0 in the future, just change '_v2' to '_v3', '_v4', etc.
+            const storageKey = 'akshajmurhekar_github_io_main_page_v2';
+            
+            // Upgraded to sessionStorage so a user's unique status resets when they close the tab/window
+            const hasVisited = sessionStorage.getItem('has_visited_portfolio_session');
             
             try {
                 let url;
                 if (!hasVisited) {
-                    // First time visiting! Increment the count and set the flag in their browser
+                    // First time visiting this session! Increment the counter
                     url = `https://countapi.mileshilliard.com/api/v1/hit/${storageKey}`;
-                    localStorage.setItem('has_visited_portfolio', 'true');
+                    sessionStorage.setItem('has_visited_portfolio_session', 'true');
                 } else {
-                    // Returning user or refresh: Just GET the stable current count without incrementing
+                    // Refreshing within the same session: Just read the stable total view count
                     url = `https://countapi.mileshilliard.com/api/v1/get/${storageKey}`;
                 }
 
