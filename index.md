@@ -311,8 +311,8 @@ title: Academic Portfolio
     <!-- Right Side: Discreet Unique View Counter Badge -->
     <div style="display: flex; align-items: center; gap: 6px; font-size: 0.95em;">
         <span style="color: #8c95a0;">Views:</span>
-        <!-- Shields.io query combined with Komarev PVC to guarantee visible dark text layout -->
-        <img src="https://img.shields.io/github/search/akshajmurhekar/akshajmurhekar.github.io/counter?color=lightgrey&label=%20&style=flat-square" alt="Hits" style="height: 20px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important; filter: contrast(90%);">
+        <!-- Configured with UT Austin's official trademark Burnt Orange (#BF5700) -->
+        <img src="https://img.shields.io/github/search/akshajmurhekar/akshajmurhekar.github.io/counter?color=BF5700&label=%20&style=flat-square" alt="Hits" style="height: 20px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important;">
     </div>
 </div>
 
