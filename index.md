@@ -40,44 +40,38 @@ title: Academic Portfolio
 <div id="about" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-bottom: 35px; margin-top: 40px;">
     
     <!-- Left Column: Centered Image & Contact Links (Inspired by Screenshot 2026-06-15 at 2.38.53 PM.jpg) -->
-<div style="flex-shrink: 0; width: 300px; max-width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center;">
-    <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
-    
-    <!-- Clean Row of Favicons imported directly from CDN -->
-    <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 14px;">
-        <!-- Google Scholar -->
-        <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" title="Google Scholar">
-            <img src="https://api.iconify.design/academicons:google-scholar.svg?color=%2357606a" alt="Google Scholar" style="width: 22px; height: 22px;">
-        </a>
+    <div style="flex-shrink: 0; width: 300px; max-width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+        
+        <!-- Clean Row of Favicons imported directly from CDN -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 14px;">
+            <!-- Google Scholar -->
+            <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" title="Google Scholar">
+                <img src="https://api.iconify.design/academicons:google-scholar.svg?color=%2357606a" alt="Google Scholar" style="width: 22px; height: 22px;">
+            </a>
 
-        <!-- LinkedIn -->
-        <a href="https://linkedin.com/in/akshaj-murhekar" target="_blank" title="LinkedIn">
-            <img src="https://api.iconify.design/bi:linkedin.svg?color=%2357606a" alt="LinkedIn" style="width: 20px; height: 20px;">
-        </a>
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/akshaj-murhekar" target="_blank" title="LinkedIn">
+                <img src="https://api.iconify.design/bi:linkedin.svg?color=%2357606a" alt="LinkedIn" style="width: 20px; height: 20px;">
+            </a>
 
-        <!-- GitHub -->
-        <a href="https://github.com/akshajmurhekar" target="_blank" title="GitHub">
-            <img src="https://api.iconify.design/bi:github.svg?color=%2357606a" alt="GitHub" style="width: 20px; height: 20px;">
-        </a>
+            <!-- GitHub -->
+            <a href="https://github.com/akshajmurhekar" target="_blank" title="GitHub">
+                <img src="https://api.iconify.design/bi:github.svg?color=%2357606a" alt="GitHub" style="width: 20px; height: 20px;">
+            </a>
 
-        <!-- Document / CV (Placeholder link) -->
-        <a href="#" onclick="return false;" title="Curriculum Vitae">
-            <img src="https://api.iconify.design/bi:file-earmark-text.svg?color=%2357606a" alt="CV" style="width: 20px; height: 20px;">
-        </a>
+            <!-- Document / CV (Placeholder link) -->
+            <a href="#" onclick="return false;" title="Curriculum Vitae">
+                <img src="https://api.iconify.design/bi:file-earmark-text.svg?color=%2357606a" alt="CV" style="width: 20px; height: 20px;">
+            </a>
+        </div>
+        
+        <!-- Email Link Block with Envelope Favicon -->
+        <div style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.93em;">
+            <img src="https://api.iconify.design/bi:envelope.svg?color=%2357606a" alt="Email" style="width: 16px; height: 16px;">
+            <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">akshaj.murhekar@utexas.edu</a>
+        </div>
     </div>
-    
-    <!-- Email Link Block with Envelope Favicon -->
-    <div style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.93em;">
-        <img src="https://api.iconify.design/bi:envelope.svg?color=%2357606a" alt="Email" style="width: 16px; height: 16px;">
-        <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">akshaj.murhekar@utexas.edu</a>
-    </div>
-</div>
-    
-    <div style="display: inline-flex; align-items: center; justify-content: center; gap: 6px; font-size: 0.93em;">
-        <svg viewBox="0 0 24 24" style="width: 16px; height: 16px; fill: #57606a;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-        <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">akshaj.murhekar@utexas.edu</a>
-    </div>
-</div>
     
     <!-- Right Column: Bio Paragraph & Research Interests -->
     <div style="flex: 1; min-width: 280px; line-height: 1.6;">
