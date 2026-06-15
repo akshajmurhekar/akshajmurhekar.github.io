@@ -177,9 +177,9 @@ title: Academic Portfolio
 ### Teaching & Tutoring
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
     <li style="margin-bottom: 12px;">
-        <strong>Graduate Teaching Assistant</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2024 &ndash; 2026</span>
+        <strong>Graduate Teaching Assistant</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2025</span>
         <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
-            Served as a TA for graduate-level courses within the Information Science domain. Conducted weekly office hours, provided conceptual guidance on machine learning applications, and managed evaluation frameworks for complex technical assignments.
+            Served as a Graduate TA across distinct academic disciplines, including Statistics and Academic Writing courses. Held weekly office hours to assist students with core course material, managed evaluation frameworks, and guided students through complex coursework requirements.
         </div>
     </li>
     <li style="margin-bottom: 8px;">
@@ -213,8 +213,8 @@ title: Academic Portfolio
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
             Funded undergraduate research fellowships supporting two distinct initiatives:
             <ul style="margin-top: 4px; margin-bottom: 0; padding-left: 20px; list-style-type: circle;">
-                <li><strong>Assistive Robotics (2022–2023):</strong> Co-designed an autonomous drone architecture for visually impaired indoor navigation. This work served as a cornerstone asset for my subsequent appointment as an Undergraduate Research Assistant at the UT Arlington Research Institute (UTARI).</li>
-                <li><strong>Generative AI Systems (2023–2024):</strong> Developed an early-stage AI-based framework designed to convert raw text prompts into structured educational video content.</li>
+                <li><strong>Assistive Robotics (2022–2023):</strong> Developed an outdoor drone navigation system for the visually impaired, which served as a foundational asset for my subsequent appointment at UTARI.</li>
+                <li><strong>Generative AI Systems (2023–2024):</strong> Developed an early-stage AI framework to convert raw text prompts into educational video content.</li>
             </ul>
         </div>
     </li>
