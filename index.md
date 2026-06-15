@@ -273,7 +273,11 @@ title: Academic Portfolio
 ### Research Mentorship
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 24px;">
     <li style="margin-bottom: 8px;">
-        <strong>Undergraduate Research Mentor</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2025 &ndash; 2026</span>
+        <!-- Standardized Flexbox wrapping container to handle mobile drop-downs cleanly -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
+            <span><strong>Undergraduate Research Mentor</strong> &middot; UT Austin</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2025 &ndash; 2026</span>
+        </div>
         <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
             Mentored an undergraduate researcher exploring multimodal machine learning. Co-guided her through project frameworks and research methodologies, directly supporting the execution of her Honors Bachelor's Thesis tied to our core deep learning pipeline.
         </div>
@@ -283,13 +287,21 @@ title: Academic Portfolio
 ### Teaching & Tutoring
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
     <li style="margin-bottom: 12px;">
-        <strong>Graduate Teaching Assistant</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2025</span>
+        <!-- Standardized Flexbox wrapping container to handle mobile drop-downs cleanly -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
+            <span><strong>Graduate Teaching Assistant</strong> &middot; UT Austin</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2025</span>
+        </div>
         <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
             Served as a Graduate TA across distinct academic disciplines, including Statistics and Academic Writing courses. Held weekly office hours to assist students with core course material, managed evaluation frameworks, and guided students through complex coursework requirements.
         </div>
     </li>
     <li style="margin-bottom: 8px;">
-        <strong>Undergraduate Academic Tutor</strong> &middot; UT Arlington <span style="font-size: 0.9em; color: #57606a; float: right;">2022 &ndash; 2024</span>
+        <!-- Standardized Flexbox wrapping container to handle mobile drop-downs cleanly -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
+            <span><strong>Undergraduate Academic Tutor</strong> &middot; UT Arlington</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2022 &ndash; 2024</span>
+        </div>
         <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
             Provided high-impact 1-on-1 and drop-in academic instruction across multiple departments. Covered core Computer Science curricula (Data Structures & Algorithms, Software Engineering), advanced Mathematics (Calculus I–III, Linear Algebra), and foundational courses in Philosophy and English.
         </div>
