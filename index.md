@@ -41,13 +41,13 @@ title: Academic Portfolio
     
     <!-- Left Column: Centered Image & Contact Links (Inspired by Screenshot 2026-06-15 at 2.38.53 PM.jpg) -->
     <div style="flex-shrink: 0; width: 300px; max-width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
+        <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 100%; border-radius: 8px; margin-bottom: 20px; background: transparent !important; border: none !important; padding: 0 !important;">
         
         <!-- Clean Row of Normalized Favicons from your local assets -->
         <div style="display: flex; justify-content: center; align-items: center; gap: 22px; margin-bottom: 14px;">
             <!-- Google Scholar -->
             <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" title="Google Scholar" class="profile-icon-link">
-                <img src="assets/icons/scholar.svg" alt="Google Scholar" class="profile-icon">
+                <img src="assets/icons/scholar.svg.svg" alt="Google Scholar" class="profile-icon">
             </a>
 
             <!-- LinkedIn -->
@@ -73,25 +73,8 @@ title: Academic Portfolio
         </div>
     </div>
 
-    <!-- ADD THESE CLASSES INSIDE YOUR EXISTING <style> BLOCK AT THE BOTTOM OF YOUR FILE -->
-    <style>
-        /* Normalizes the sizing, layout properties, and initial gray tone of FontAwesome assets */
-        .profile-icon {
-            width: 20px;
-            height: 20px;
-            filter: invert(38%) sepia(8%) saturate(638%) hue-rotate(173deg) brightness(93%) contrast(89%); /* Forces charcoal #57606a */
-            transition: filter 0.2s ease-in-out;
-        }
-
-        /* Smooth transition over to matching link blue (#0366d6) on cursor hover */
-        .profile-icon-link:hover .profile-icon {
-            filter: invert(31%) sepia(89%) saturate(2304%) hue-rotate(204deg) brightness(91%) contrast(98%); /* Forces blue #0366d6 */
-        }
-    </style>
-    
     <!-- Right Column: Bio Paragraph & Research Interests -->
     <div style="flex: 1; min-width: 280px; line-height: 1.6;">
-        <!-- Dives straight into the paragraph text -->
         <p style="margin: 0; margin-bottom: 24px; color: #24292f; text-align: justify;">
             I am a graduate researcher at UT Austin with a focus on language modeling, representation learning, and multimodal deep learning. During my time as an M.S. student, I worked with <a href="https://abhijitmishra.github.io/" target="_blank">Dr. Abhijit Mishra</a> on challenging problems at the intersection of language models and neural signal processing. My research focused on leveraging in-context learning capabilities of Large Language Models (LLMs). Specifically, I developed privacy-preserving neuro-symbolic decoding pipelines and efficient retrieval frameworks designed to bridge the gap between brain activity and text, translating electroencephalography (EEG) signals directly into natural language. Please bear with me while I wait for Google Search to index this page.
         </p>
@@ -329,6 +312,24 @@ title: Academic Portfolio
         margin: 0 !important;
         visibility: hidden !important;
         pointer-events: none !important;
+    }
+
+    /* Normalizes the sizing, resets theme-forced backgrounds, and sets gray tone */
+    .profile-icon {
+        width: 20px !important;
+        height: 20px !important;
+        background: transparent !important; /* Strips out the gray box in Screenshot 2026-06-15 at 3.05.22 PM.png */
+        border: none !important;            /* Strips out any forced theme border outlines */
+        padding: 0 !important;              /* Strips layout spacing bloating */
+        margin: 0 !important;
+        box-shadow: none !important;
+        filter: invert(38%) sepia(8%) saturate(638%) hue-rotate(173deg) brightness(93%) contrast(89%); 
+        transition: filter 0.2s ease-in-out;
+    }
+
+    /* Smooth transition over to matching link blue (#0366d6) on cursor hover */
+    .profile-icon-link:hover .profile-icon {
+        filter: invert(31%) sepia(89%) saturate(2304%) hue-rotate(204deg) brightness(91%) contrast(98%) !important; 
     }
 
     /* Smooth Scroll configuration */
