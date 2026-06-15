@@ -268,8 +268,8 @@ title: Academic Portfolio
         text-decoration: underline !important;
     }
 
-    /* Disables the self-referencing header click link on your profile template */
-    header a, .site-title, h1 a, a.site-title {
+    /* FORCES your name header to remain non-clickable charcoal */
+    header a, .site-title, h1, h1 a, a.site-title, .site-header a {
         pointer-events: none !important;
         cursor: default !important;
         text-decoration: none !important;
