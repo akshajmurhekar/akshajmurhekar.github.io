@@ -37,41 +37,57 @@ title: Academic Portfolio
 </div>
 
 <!-- INTRO & INTERESTS BLOCK: Headshot Left Column with Links underneath / Content Right Column -->
-<div id="about" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-bottom: 35px; margin-top: 40px;">
+<div id="about" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 40px; margin-bottom: 35px; margin-top: 40px;">
     
     <!-- Left Column: Centered Image & Contact Links (Inspired by Screenshot 2026-06-15 at 2.38.53 PM.jpg) -->
     <div style="flex-shrink: 0; width: 300px; max-width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center;">
         <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 100%; border-radius: 8px; margin-bottom: 20px;">
         
-        <!-- Clean Row of Favicons imported directly from CDN -->
-        <div style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-bottom: 14px;">
+        <!-- Clean Row of Normalized Favicons from your local assets -->
+        <div style="display: flex; justify-content: center; align-items: center; gap: 22px; margin-bottom: 14px;">
             <!-- Google Scholar -->
-            <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" title="Google Scholar">
-                <img src="https://api.iconify.design/academicons:google-scholar.svg?color=%2357606a" alt="Google Scholar" style="width: 22px; height: 22px;">
+            <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" title="Google Scholar" class="profile-icon-link">
+                <img src="assets/icons/scholar.svg" alt="Google Scholar" class="profile-icon">
             </a>
 
             <!-- LinkedIn -->
-            <a href="https://linkedin.com/in/akshaj-murhekar" target="_blank" title="LinkedIn">
-                <img src="https://api.iconify.design/bi:linkedin.svg?color=%2357606a" alt="LinkedIn" style="width: 20px; height: 20px;">
+            <a href="https://linkedin.com/in/akshaj-murhekar" target="_blank" title="LinkedIn" class="profile-icon-link">
+                <img src="assets/icons/linkedin.svg" alt="LinkedIn" class="profile-icon">
             </a>
 
             <!-- GitHub -->
-            <a href="https://github.com/akshajmurhekar" target="_blank" title="GitHub">
-                <img src="https://api.iconify.design/bi:github.svg?color=%2357606a" alt="GitHub" style="width: 20px; height: 20px;">
+            <a href="https://github.com/akshajmurhekar" target="_blank" title="GitHub" class="profile-icon-link">
+                <img src="assets/icons/github.svg" alt="GitHub" class="profile-icon">
             </a>
 
             <!-- Document / CV (Placeholder link) -->
-            <a href="#" onclick="return false;" title="Curriculum Vitae">
-                <img src="https://api.iconify.design/bi:file-earmark-text.svg?color=%2357606a" alt="CV" style="width: 20px; height: 20px;">
+            <a href="#" onclick="return false;" title="Curriculum Vitae" class="profile-icon-link">
+                <img src="assets/icons/cv.svg" alt="CV" class="profile-icon">
             </a>
         </div>
         
-        <!-- Email Link Block with Envelope Favicon -->
+        <!-- Email Link Block with Normalized Envelope Favicon -->
         <div style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.93em;">
-            <img src="https://api.iconify.design/bi:envelope.svg?color=%2357606a" alt="Email" style="width: 16px; height: 16px;">
+            <img src="assets/icons/email.svg" alt="Email" class="profile-icon" style="width: 16px; height: 16px;">
             <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">akshaj.murhekar@utexas.edu</a>
         </div>
     </div>
+
+    <!-- ADD THESE CLASSES INSIDE YOUR EXISTING <style> BLOCK AT THE BOTTOM OF YOUR FILE -->
+    <style>
+        /* Normalizes the sizing, layout properties, and initial gray tone of FontAwesome assets */
+        .profile-icon {
+            width: 20px;
+            height: 20px;
+            filter: invert(38%) sepia(8%) saturate(638%) hue-rotate(173deg) brightness(93%) contrast(89%); /* Forces charcoal #57606a */
+            transition: filter 0.2s ease-in-out;
+        }
+
+        /* Smooth transition over to matching link blue (#0366d6) on cursor hover */
+        .profile-icon-link:hover .profile-icon {
+            filter: invert(31%) sepia(89%) saturate(2304%) hue-rotate(204deg) brightness(91%) contrast(98%); /* Forces blue #0366d6 */
+        }
+    </style>
     
     <!-- Right Column: Bio Paragraph & Research Interests -->
     <div style="flex: 1; min-width: 280px; line-height: 1.6;">
