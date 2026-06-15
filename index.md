@@ -30,8 +30,8 @@ title: Academic Portfolio
         <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#education">Education</a>
-        <a href="#awards">Awards</a>
         <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
         <a href="#ta">TA & Mentoring</a>
     </div>
 </div>
