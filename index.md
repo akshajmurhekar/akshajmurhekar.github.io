@@ -226,7 +226,7 @@ title: Academic Portfolio
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2023 &ndash; 2024</span>
         </div>
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            Competitively selected into an institutional research cohort funded by the NIH to engineer an autonomous medical supply cart, also a national presentation at the BMES 2023 Annual Meeting in Seattle.
+            Funded a year-long Senior Design initiative where I served as the project lead. Following summer field research with medical staff to identify clinical workflow constraints, I led the full-lifecycle engineering and development of an autonomous medical supply cart, presenting our initial framework at the BMES 2023 Annual Meeting in Seattle.
         </div>
     </li>
 
