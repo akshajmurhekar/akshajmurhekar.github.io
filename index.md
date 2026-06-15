@@ -213,7 +213,7 @@ title: Academic Portfolio
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
             Funded undergraduate research fellowships supporting two distinct initiatives:
             <ul style="margin-top: 4px; margin-bottom: 0; padding-left: 20px; list-style-type: circle;">
-                <li><strong>Assistive Robotics (2022–2023):</strong> Developed an outdoor drone navigation system for the visually impaired, which served as a foundational asset for my subsequent appointment at UTARI.</li>
+                <li><strong>Assistive Robotics (2022–2023):</strong> Developed an outdoor drone navigation system for the visually impaired, which served as a foundational asset for my subsequent appointment at UT Arlington Research Institute.</li>
                 <li><strong>Generative AI Systems (2023–2024):</strong> Developed an early-stage AI framework to convert raw text prompts into educational video content.</li>
             </ul>
         </div>
@@ -244,7 +244,7 @@ title: Academic Portfolio
     <!-- Award 5 -->
     <li style="margin-bottom: 8px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
-            <span><strong>Undergraduate Research Appreciation Award</strong> &middot; UTARI</span>
+            <span><strong>Undergraduate Research Appreciation Award</strong> &middot; UT Arlington Research Institute</span>
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2024</span>
         </div>
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
