@@ -309,11 +309,11 @@ title: Academic Portfolio
     </div>
     
     <!-- Right Side: Discreet Unique View Counter Badge -->
+    <!-- Right Side: Working Unique View Counter Badge -->
     <div style="display: flex; align-items: center; gap: 6px; font-size: 0.95em;">
-        <span style="color: #8c95a0;">Views:</span>
-        <!-- MojoAuth CountAPI: Safely tracking portfolio page hits with custom UT Burnt Orange styling -->
-        <img src="https://count.mojoauth.com/api/v1/badge?id=akshajmurhekar.github.io&theme=dark&color=BF5700" alt="Hits" style="height: 20px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important;">
-</div>
+        <!-- Active Visitor Counter API tracking live visits to your specific landing domain -->
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=akshajmurhekar.github.io&left_text=Views&left_color=%238c95a0&right_color=%23BF5700" alt="Hits" style="height: 20px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important;">
+    </div>
 </div>
 
 
