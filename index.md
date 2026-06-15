@@ -311,28 +311,37 @@ title: Academic Portfolio
     <!-- Right Side: Discreet Unique View Counter Badge -->
     <div style="display: flex; align-items: center; gap: 6px; font-size: 0.88em; color: #57606a;">
         <span>Views:</span>
+        <!-- A clean HTML pill matching your exact font size, rounded corners, and UT Burnt Orange style -->
         <span id="portfolio-views" style="display: inline-block; padding: 2px 8px; background-color: #BF5700; color: #ffffff; font-weight: 600; font-size: 0.9em; border-radius: 4px; min-width: 12px; text-align: center;">...</span>
     </div>
 
     <script>
-        // Self-invoking async context to hit the data endpoint cleanly
         (async function() {
             const viewPill = document.getElementById('portfolio-views');
-            // Unique namespace matching your specific repository landing target URL
             const storageKey = 'akshajmurhekar_github_io_main_page';
             
+            // Check if this specific browser has visited before
+            const hasVisited = localStorage.getItem('has_visited_portfolio');
+            
             try {
-                // Fires an open background network GET request to update your count by 1
-                const response = await fetch(`https://countapi.mileshilliard.com/api/v1/hit/${storageKey}`);
+                let url;
+                if (!hasVisited) {
+                    // First time visiting! Increment the count and set the flag in their browser
+                    url = `https://countapi.mileshilliard.com/api/v1/hit/${storageKey}`;
+                    localStorage.setItem('has_visited_portfolio', 'true');
+                } else {
+                    // Returning user or refresh: Just GET the stable current count without incrementing
+                    url = `https://countapi.mileshilliard.com/api/v1/get/${storageKey}`;
+                }
+
+                const response = await fetch(url);
                 if (response.ok) {
                     const data = await response.json();
-                    // Updates the loading dot placeholder text to show the fresh number safely
                     viewPill.innerText = data.value;
                 } else {
                     viewPill.innerText = '1';
                 }
             } catch (error) {
-                // Fail-safe default text fallback if a tracking blocking extension stops the api call
                 viewPill.innerText = '1';
             }
         })();
