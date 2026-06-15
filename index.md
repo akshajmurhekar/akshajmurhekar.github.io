@@ -2,9 +2,6 @@
 layout: default
 title: Academic Portfolio
 ---
-<head>
-    <meta name="google-site-verification" content="gigNdOOmOb5oe2-QJAqaXMsmRxACSDHnxnvdqVuYL0E" />
-</head>
 
 <script>
     // Dynamically injects your local UT favicon into the document head
