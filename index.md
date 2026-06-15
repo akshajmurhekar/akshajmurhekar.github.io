@@ -27,19 +27,19 @@ title: Academic Portfolio
     </label>
 
     <div class="nav-links">
-        <a href="#interests">Interests</a>
+        <a href="#about">About</a>
         <a href="#research">Research</a>
         <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
         <a href="#projects">Projects</a>
         <a href="#teaching">Teaching</a>
-        <a href="#awards">Awards</a>
     </div>
 </div>
 
-<!-- INTRO BLOCK: Headshot centered vertically with the text column -->
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 34px; margin-bottom: 35px; margin-top: 40px;">
+<!-- INTRO & INTERESTS BLOCK: Headshot centered vertically with the text column -->
+<div id="about" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 34px; margin-bottom: 35px; margin-top: 40px;">
     <!-- Headshot Column -->
-    <div style="flex-shrink: 0; text-align: center;">
+    <div style="flex-shrink: 0; text-align: center; position: sticky; top: 90px;">
         <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 300px; max-width: 100%; border-radius: 8px;">
     </div>
     
@@ -54,21 +54,21 @@ title: Academic Portfolio
             <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">Email</a>
         </div>
         
-        <!-- Clean, human-readable bio -->
-        <p style="margin: 0; color: #24292f;">
+        <p style="margin: 0; margin-bottom: 20px; color: #24292f;">
             I am a graduate researcher at UT Austin with a focus on language modeling, representation learning, and multimodal deep learning. During my time as an M.S. student, I worked with <a href="https://abhijitmishra.github.io/" target="_blank">Dr. Abhijit Mishra</a> on challenging problems at the intersection of language models and neural signal processing. My research focused on leveraging in-context learning capabilities of Large Language Models (LLMs). Specifically, I developed privacy-preserving neuro-symbolic decoding pipelines and efficient retrieval frameworks designed to bridge the gap between brain activity and text, translating electroencephalography (EEG) signals directly into natural language. Please bear with me while I wait for Google Search to index this page.
         </p>
+
+        <h3 style="font-size: 1.1em; font-weight: 600; color: #24292f; margin-bottom: 8px;">Research Interests</h3>
+        <ul style="line-height: 1.6; padding-left: 20px; color: #24292f; margin: 0;">
+            <li style="margin-bottom: 4px;"><strong>Multimodal Deep Learning</strong></li>
+            <li style="margin-bottom: 4px;"><strong>Neuro-Symbolic Learning</strong></li>
+            <li style="margin-bottom: 4px;"><strong>Sparse & Efficient Architectures</strong></li>
+            <li style="margin-bottom: 4px;"><strong>LLM Evaluation & Behavioral Alignment</strong></li>
+        </ul>
     </div>
 </div>
 
-## Research Interests {#interests}
-
-<ul style="line-height: 1.8; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
-    <li style="margin-bottom: 4px;"><strong>Multimodal Deep Learning</strong></li>
-    <li style="margin-bottom: 4px;"><strong>Neuro-Symbolic Learning</strong></li>
-    <li style="margin-bottom: 4px;"><strong>Sparse & Efficient Architectures</strong></li>
-    <li style="margin-bottom: 4px;"><strong>LLM Evaluation & Behavioral Alignment</strong></li>
-</ul>
+<hr style="border: 0; border-top: 1px solid rgba(225, 228, 232, 0.4); margin: 30px 0;">
 
 ## Research & Preprints {#research}
 
@@ -184,34 +184,6 @@ title: Academic Portfolio
     </li>
 </ul>
 
-## Teaching & Mentorship {#teaching}
-
-### Research Mentorship
-<ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 24px;">
-    <li style="margin-bottom: 8px;">
-        <strong>Undergraduate Research Mentor</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2025 &ndash; 2026</span>
-        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
-            Mentored an undergraduate researcher exploring multimodal machine learning. Co-guided her through project frameworks and research methodologies, directly supporting the execution of her Honors Bachelor's Thesis tied to our core deep learning pipeline.
-        </div>
-    </li>
-</ul>
-
-### Teaching & Tutoring
-<ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
-    <li style="margin-bottom: 12px;">
-        <strong>Graduate Teaching Assistant</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2025</span>
-        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
-            Served as a Graduate TA across distinct academic disciplines, including Statistics and Academic Writing courses. Held weekly office hours to assist students with core course material, managed evaluation frameworks, and guided students through complex coursework requirements.
-        </div>
-    </li>
-    <li style="margin-bottom: 8px;">
-        <strong>Undergraduate Academic Tutor</strong> &middot; UT Arlington <span style="font-size: 0.9em; color: #57606a; float: right;">2022 &ndash; 2024</span>
-        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
-            Provided high-impact 1-on-1 and drop-in academic instruction across multiple departments. Covered core Computer Science curricula (Data Structures & Algorithms, Software Engineering), advanced Mathematics (Calculus I–III, Linear Algebra), and foundational courses in Philosophy and English.
-        </div>
-    </li>
-</ul>
-
 ## Awards, Grants & Recognitions {#awards}
 
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
@@ -274,6 +246,36 @@ title: Academic Portfolio
         </div>
     </li>
 </ul>
+
+
+## Teaching & Mentorship {#teaching}
+
+### Research Mentorship
+<ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 24px;">
+    <li style="margin-bottom: 8px;">
+        <strong>Undergraduate Research Mentor</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2025 &ndash; 2026</span>
+        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
+            Mentored an undergraduate researcher exploring multimodal machine learning. Co-guided her through project frameworks and research methodologies, directly supporting the execution of her Honors Bachelor's Thesis tied to our core deep learning pipeline.
+        </div>
+    </li>
+</ul>
+
+### Teaching & Tutoring
+<ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
+    <li style="margin-bottom: 12px;">
+        <strong>Graduate Teaching Assistant</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2025</span>
+        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
+            Served as a Graduate TA across distinct academic disciplines, including Statistics and Academic Writing courses. Held weekly office hours to assist students with core course material, managed evaluation frameworks, and guided students through complex coursework requirements.
+        </div>
+    </li>
+    <li style="margin-bottom: 8px;">
+        <strong>Undergraduate Academic Tutor</strong> &middot; UT Arlington <span style="font-size: 0.9em; color: #57606a; float: right;">2022 &ndash; 2024</span>
+        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
+            Provided high-impact 1-on-1 and drop-in academic instruction across multiple departments. Covered core Computer Science curricula (Data Structures & Algorithms, Software Engineering), advanced Mathematics (Calculus I–III, Linear Algebra), and foundational courses in Philosophy and English.
+        </div>
+    </li>
+</ul>
+
 
 <style>
     /* ULTIMATE PRIMER THEME OVERRIDE: Targets the exact structural container structure that forces the header */
