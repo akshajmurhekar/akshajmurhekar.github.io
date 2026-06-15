@@ -276,18 +276,20 @@ title: Academic Portfolio
 </ul>
 
 <style>
-    /* PRECISE THEME FIX: Hides the absolute parent layout blocks used by jekyll-theme-primer */
-    header.site-header, 
-    .site-header, 
-    div.page-header,
-    .page-header, 
-    header.page-header,
-    header[role="banner"] {
+    /* ULTIMATE PRIMER THEME OVERRIDE: Targets the exact structural container structure that forces the header */
+    .container-lg > h1,
+    .container-lg > h1 a,
+    .container-md > h1,
+    header.site-header,
+    .site-header,
+    .page-header {
         display: none !important;
+        opacity: 0 !important;
         height: 0 !important;
         padding: 0 !important;
         margin: 0 !important;
         visibility: hidden !important;
+        pointer-events: none !important;
     }
 
     /* Smooth Scroll configuration */
