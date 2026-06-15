@@ -36,27 +36,33 @@ title: Academic Portfolio
     </div>
 </div>
 
-<div id="about" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 34px; margin-bottom: 35px; margin-top: 40px;">
-    <div style="flex-shrink: 0; text-align: center;">
-        <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 300px; max-width: 100%; border-radius: 8px;">
-    </div>
+<!-- INTRO & INTERESTS BLOCK: Headshot Left Column with Links underneath / Content Right Column -->
+<div id="about" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 40px; margin-bottom: 35px; margin-top: 40px;">
     
-    <div style="flex: 1; min-width: 280px; line-height: 1.6;">
-        <span style="font-size: 1.3em; font-weight: 600; color: #24292f;">Graduate Research Assistant, UT Austin</span>
+    <!-- Left Column: Centered Image & Contact Links (Inspired by Screenshot 2026-06-15 at 2.38.53 PM.jpg) -->
+    <div style="flex-shrink: 0; width: 300px; max-width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center;">
+        <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 100%; border-radius: 8px; margin-bottom: 16px;">
         
-        <div style="margin-top: 8px; margin-bottom: 16px; color: #57606a;">
+        <!-- Clean, centered social links stacked nicely beneath the headshot -->
+        <div style="line-height: 1.8; color: #57606a; font-size: 0.95em;">
             <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" style="font-weight: 500; color: #0366d6; text-decoration: none;">Google Scholar</a> &middot; 
             <a href="https://linkedin.com/in/akshaj-murhekar" target="_blank" style="font-weight: 500; color: #0366d6; text-decoration: none;">LinkedIn</a> &middot; 
-            <a href="https://github.com/akshajmurhekar" target="_blank" style="font-weight: 500; color: #0366d6; text-decoration: none;">GitHub</a> &middot; 
-            <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">Email</a>
+            <a href="https://github.com/akshajmurhekar" target="_blank" style="font-weight: 500; color: #0366d6; text-decoration: none;">GitHub</a>
+            <div style="margin-top: 4px;">
+                <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">akshaj.murhekar@utexas.edu</a>
+            </div>
         </div>
-        
-        <p style="margin: 0; margin-bottom: 20px; color: #24292f;">
+    </div>
+    
+    <!-- Right Column: Bio Paragraph & Research Interests -->
+    <div style="flex: 1; min-width: 280px; line-height: 1.6;">
+        <!-- Dives straight into the paragraph text -->
+        <p style="margin: 0; margin-bottom: 24px; color: #24292f; text-align: justify;">
             I am a graduate researcher at UT Austin with a focus on language modeling, representation learning, and multimodal deep learning. During my time as an M.S. student, I worked with <a href="https://abhijitmishra.github.io/" target="_blank">Dr. Abhijit Mishra</a> on challenging problems at the intersection of language models and neural signal processing. My research focused on leveraging in-context learning capabilities of Large Language Models (LLMs). Specifically, I developed privacy-preserving neuro-symbolic decoding pipelines and efficient retrieval frameworks designed to bridge the gap between brain activity and text, translating electroencephalography (EEG) signals directly into natural language. Please bear with me while I wait for Google Search to index this page.
         </p>
 
-        <h3 style="font-size: 1.1em; font-weight: 600; color: #24292f; margin-bottom: 8px;">Research Interests</h3>
-        <ul style="line-height: 1.6; padding-left: 20px; color: #24292f; margin: 0;">
+        <h3 style="font-size: 1.15em; font-weight: 600; color: #24292f; margin-bottom: 10px;">Research Interests</h3>
+        <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin: 0;">
             <li style="margin-bottom: 4px;"><strong>Multimodal Deep Learning</strong></li>
             <li style="margin-bottom: 4px;"><strong>Neuro-Symbolic Learning</strong></li>
             <li style="margin-bottom: 4px;"><strong>Sparse & Efficient Architectures</strong></li>
