@@ -296,6 +296,26 @@ title: Academic Portfolio
     </li>
 </ul>
 
+<!-- FOOTER DIVIDER LINE -->
+<hr style="border: 0; border-top: 1px solid rgba(225, 228, 232, 0.4); margin: 50px 0 20px 0;">
+
+<!-- FOOTER CONTAINER -->
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 15px; padding-bottom: 30px; font-size: 0.88em; color: #57606a;">
+    
+    <!-- Left Side: Branding, UT Logo asset, and Copyright -->
+    <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="assets/longhorn-icon.svg" alt="UT Austin Logo" style="width: 18px; height: auto; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important;">
+        <span>&copy; 2026 Akshaj Murhekar. All rights reserved.</span>
+    </div>
+    
+    <!-- Right Side: Discreet View Counter Badge -->
+    <div style="display: flex; align-items: center; gap: 6px; font-size: 0.95em;">
+        <span style="color: #8c95a0;">Views:</span>
+        <!-- Dynamic Hit Counter Badge -->
+        <img src="https://hitcounter.pythonanywhere.com/count/tag.svg?url=https%3A%2F%2Fakshajmurhekar.github.io" alt="Hits" style="height: 18px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important; filter: grayscale(100%) opacity(0.75);">
+    </div>
+</div>
+
 
 <style>
     /* ULTIMATE PRIMER THEME OVERRIDE: Targets the exact structural container structure that forces the header */
