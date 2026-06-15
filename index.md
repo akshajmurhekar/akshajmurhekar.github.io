@@ -458,4 +458,9 @@ title: Academic Portfolio
     p a:hover, li a:hover, div a:hover {
         text-decoration: underline !important;
     }
+    div a.profile-icon-link:hover {
+    color: transparent !important;
+    text-decoration: none !important;
+    background: transparent !important;
+}
 </style>
