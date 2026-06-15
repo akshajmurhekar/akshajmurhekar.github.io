@@ -309,10 +309,10 @@ title: Academic Portfolio
     </div>
     
     <!-- Right Side: Discreet Unique View Counter Badge -->
-    <!-- Right Side: Working Unique View Counter Badge -->
-    <div style="display: flex; align-items: center; gap: 6px; font-size: 0.95em;">
-        <!-- Active Visitor Counter API tracking live visits to your specific landing domain -->
-        <img src="https://visitor-badge.laobi.icu/badge?page_id=akshajmurhekar.github.io&left_text=Views&left_color=%238c95a0&right_color=%23BF5700" alt="Hits" style="height: 20px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important;">
+    <div style="display: flex; align-items: center; gap: 6px; font-size: 0.88em; color: #57606a;">
+        <span>Views:</span>
+        <!-- Dynamic page hit counter styled as a minimalist UT Burnt Orange pill badge -->
+        <img src="https://visitor-badge.laobi.icu/badge?page_id=akshajmurhekar.github.io&left_text=&right_color=%23BF5700" alt="Hits" style="height: 18px; border-radius: 4px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important;">
     </div>
 </div>
 
