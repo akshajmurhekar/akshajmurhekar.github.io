@@ -25,11 +25,11 @@ title: Academic Portfolio
     <div style="flex: 1; min-width: 280px; line-height: 1.6;">
         <span style="font-size: 1.3em; font-weight: 600; color: #24292f;">Graduate Research Assistant, UT Austin</span>
         
-        <div style="margin-top: 8px; margin-bottom: 16px;">
-            <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" style="font-weight: 500;">Google Scholar</a> &middot; 
-            <a href="https://linkedin.com/in/akshaj-murhekar" target="_blank" style="font-weight: 500;">LinkedIn</a> &middot; 
-            <a href="https://github.com/akshajmurhekar" target="_blank" style="font-weight: 500;">GitHub</a> &middot; 
-            <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500;">Email</a>
+        <div style="margin-top: 8px; margin-bottom: 16px; color: #57606a;">
+            <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" style="font-weight: 500; color: #0366d6; text-decoration: none;">Google Scholar</a> &middot; 
+            <a href="https://linkedin.com/in/akshaj-murhekar" target="_blank" style="font-weight: 500; color: #0366d6; text-decoration: none;">LinkedIn</a> &middot; 
+            <a href="https://github.com/akshajmurhekar" target="_blank" style="font-weight: 500; color: #0366d6; text-decoration: none;">GitHub</a> &middot; 
+            <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">Email</a>
         </div>
         
         <!-- Clean, human-readable bio -->
@@ -183,7 +183,7 @@ title: Academic Portfolio
         </div>
     </li>
     <li style="margin-bottom: 8px;">
-        <strong>Undergraduate Academic Tutor</strong> &middot; UT Arlington <span style="font-size: 0.9em; color: #57606a; float: right;">2021 &ndash; 2024</span>
+        <strong>Undergraduate Academic Tutor</strong> &middot; UT Arlington <span style="font-size: 0.9em; color: #57606a; float: right;">2022 &ndash; 2024</span>
         <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
             Provided high-impact 1-on-1 and drop-in academic instruction across multiple departments. Covered core Computer Science curricula (Data Structures & Algorithms, Software Engineering), advanced Mathematics (Calculus I–III, Linear Algebra), and foundational courses in Philosophy and English.
         </div>
@@ -254,7 +254,21 @@ title: Academic Portfolio
 </ul>
 
 <style>
-    /* Disables the self-referencing click link on your name */
+    /* Global layout color unification */
+    body, p, li, div {
+        color: #24292f !important;
+    }
+    
+    /* Standardizes normal inline contextual links */
+    p a, li a, div a:not([style*="background-color"]) {
+        color: #0366d6 !important;
+        text-decoration: none !important;
+    }
+    p a:hover, li a:hover, div a:hover {
+        text-decoration: underline !important;
+    }
+
+    /* Disables the self-referencing header click link on your profile template */
     header a, .site-title, h1 a, a.site-title {
         pointer-events: none !important;
         cursor: default !important;
