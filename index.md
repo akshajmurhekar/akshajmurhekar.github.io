@@ -36,14 +36,11 @@ title: Academic Portfolio
     </div>
 </div>
 
-<!-- INTRO & INTERESTS BLOCK: Headshot centered vertically with the text column -->
 <div id="about" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 34px; margin-bottom: 35px; margin-top: 40px;">
-    <!-- Headshot Column -->
-    <div style="flex-shrink: 0; text-align: center; position: sticky; top: 90px;">
+    <div style="flex-shrink: 0; text-align: center;">
         <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 300px; max-width: 100%; border-radius: 8px;">
     </div>
     
-    <!-- Content Column that expands to fill the right side -->
     <div style="flex: 1; min-width: 280px; line-height: 1.6;">
         <span style="font-size: 1.3em; font-weight: 600; color: #24292f;">Graduate Research Assistant, UT Austin</span>
         
@@ -68,7 +65,6 @@ title: Academic Portfolio
     </div>
 </div>
 
-<hr style="border: 0; border-top: 1px solid rgba(225, 228, 232, 0.4); margin: 30px 0;">
 
 ## Research & Preprints {#research}
 
