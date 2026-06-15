@@ -276,9 +276,18 @@ title: Academic Portfolio
 </ul>
 
 <style>
-    /* Entirely hides the theme's default layout header that was rendering in blue */
-    header.site-header, .site-header, #masthead, .page-header {
+    /* PRECISE THEME FIX: Hides the absolute parent layout blocks used by jekyll-theme-primer */
+    header.site-header, 
+    .site-header, 
+    div.page-header,
+    .page-header, 
+    header.page-header,
+    header[role="banner"] {
         display: none !important;
+        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        visibility: hidden !important;
     }
 
     /* Smooth Scroll configuration */
@@ -296,7 +305,7 @@ title: Academic Portfolio
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap; /* Allows panel drop down space on mobile */
+        flex-wrap: wrap; 
         
         /* Glass styling */
         background-color: rgba(255, 255, 255, 0.8); 
@@ -361,11 +370,11 @@ title: Academic Portfolio
     /* MOBILE SPECIFIC MEDIA QUERY RENDERING */
     @media screen and (max-width: 768px) {
         .nav-toggle-label {
-            display: flex; /* Shows hamburger icon */
+            display: flex; 
         }
 
         .nav-links {
-            display: none; /* Collapses text menu row natively */
+            display: none; 
             flex-direction: column;
             width: 100%;
             margin-top: 15px;
@@ -380,12 +389,10 @@ title: Academic Portfolio
             font-size: 1.05em;
         }
 
-        /* Checkbox Hack Magic: When hamburger button is clicked, expand dropdown links smoothly */
         .nav-toggle:checked ~ .nav-links {
             display: flex;
         }
 
-        /* Pure CSS Interactive animation for the Hamburger icon transforming to an 'X' close pattern */
         .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
             transform: translateY(7px) rotate(45deg);
         }
