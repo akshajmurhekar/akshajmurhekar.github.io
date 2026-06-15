@@ -47,7 +47,7 @@ title: Academic Portfolio
         <div style="display: flex; justify-content: center; align-items: center; gap: 22px; margin-bottom: 14px;">
             <!-- Google Scholar -->
             <a href="https://scholar.google.com/citations?user=iObTPf8AAAAJ" target="_blank" title="Google Scholar" class="profile-icon-link">
-                <img src="assets/icons/scholar.svg.svg" alt="Google Scholar" class="profile-icon">
+                <img src="assets/icons/scholar.svg" alt="Google Scholar" class="profile-icon">
             </a>
 
             <!-- LinkedIn -->
