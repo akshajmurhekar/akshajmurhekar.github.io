@@ -311,8 +311,8 @@ title: Academic Portfolio
     <!-- Right Side: Discreet View Counter Badge -->
     <div style="display: flex; align-items: center; gap: 6px; font-size: 0.95em;">
         <span style="color: #8c95a0;">Views:</span>
-        <!-- Configured to strictly track the live Web URL space cleanly -->
-        <img src="https://hits.dwyl.com/akshajmurhekar/akshajmurhekar.github.io.svg?style=flat-square" alt="Hits" style="height: 20px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important; filter: grayscale(100%) opacity(0.65);">
+        <!-- Corrected structural URL path for live web parsing -->
+        <img src="https://hits.dwyl.com/akshajmurhekar/akshajmurhekar.github.io/index.svg?style=flat-square" alt="Hits" style="height: 20px; background: transparent !important; border: none !important; padding: 0 !important; margin: 0 !important; box-shadow: none !important; filter: grayscale(100%) opacity(0.65);">
     </div>
 </div>
 
