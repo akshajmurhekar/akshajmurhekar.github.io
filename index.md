@@ -32,7 +32,7 @@ title: Academic Portfolio
         <a href="#education">Education</a>
         <a href="#awards">Awards</a>
         <a href="#projects">Projects</a>
-        <a href="#teaching">Teaching</a>
+        <a href="#ta">TA & Mentoring</a>
     </div>
 </div>
 
@@ -268,7 +268,7 @@ title: Academic Portfolio
 </ul>
 
 
-## Teaching & Mentorship {#teaching}
+## Teaching Assistantships & Mentorship {#ta}
 
 ### Research Mentorship
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 24px;">
