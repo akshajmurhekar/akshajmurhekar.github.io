@@ -14,8 +14,18 @@ title: Academic Portfolio
     })();
 </script>
 
+<!-- STICKY HOVERING FLOATING GLASS NAV BAR WITH MOBILE DROP DOWN -->
 <div class="sticky-nav">
     <div class="nav-name">Akshaj Murhekar</div>
+    
+    <!-- Hidden Checkbox & Hamburger Label for Mobile Toggle -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
     <div class="nav-links">
         <a href="#interests">Interests</a>
         <a href="#research">Research</a>
@@ -26,11 +36,14 @@ title: Academic Portfolio
     </div>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 34px; margin-bottom: 35px; margin-top: 20px;">
+<!-- INTRO BLOCK: Headshot centered vertically with the text column -->
+<div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 34px; margin-bottom: 35px; margin-top: 40px;">
+    <!-- Headshot Column -->
     <div style="flex-shrink: 0; text-align: center;">
         <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 300px; max-width: 100%; border-radius: 8px;">
     </div>
     
+    <!-- Content Column that expands to fill the right side -->
     <div style="flex: 1; min-width: 280px; line-height: 1.6;">
         <span style="font-size: 1.3em; font-weight: 600; color: #24292f;">Graduate Research Assistant, UT Austin</span>
         
@@ -41,6 +54,7 @@ title: Academic Portfolio
             <a href="mailto:akshaj.murhekar@utexas.edu" style="font-weight: 500; color: #0366d6; text-decoration: none;">Email</a>
         </div>
         
+        <!-- Clean, human-readable bio -->
         <p style="margin: 0; color: #24292f;">
             I am a graduate researcher at UT Austin with a focus on language modeling, representation learning, and multimodal deep learning. During my time as an M.S. student, I worked with <a href="https://abhijitmishra.github.io/" target="_blank">Dr. Abhijit Mishra</a> on challenging problems at the intersection of language models and neural signal processing. My research focused on leveraging in-context learning capabilities of Large Language Models (LLMs). Specifically, I developed privacy-preserving neuro-symbolic decoding pipelines and efficient retrieval frameworks designed to bridge the gap between brain activity and text, translating electroencephalography (EEG) signals directly into natural language. Please bear with me while I wait for Google Search to index this page.
         </p>
@@ -59,6 +73,7 @@ title: Academic Portfolio
 ## Research & Preprints {#research}
 
 <ol style="padding-left: 20px; margin: 0;">
+    <!-- PUBLICATION 1 -->
     <li style="margin-bottom: 28px; line-height: 1.6; color: #24292f;">
         <div style="font-size: 1.1em; font-weight: 600; color: #24292f; margin-bottom: 4px;">
             SYNAPSE: Neuro-Symbolic Visual Thought-to-Text Decoding via Topological Semantic Denoising
@@ -73,6 +88,7 @@ title: Academic Portfolio
         </div>
     </li>
 
+    <!-- PUBLICATION 2 -->
     <li style="margin-bottom: 28px; line-height: 1.6; color: #24292f;">
         <div style="font-size: 1.1em; font-weight: 600; color: #24292f; margin-bottom: 4px;">
             SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
@@ -87,6 +103,7 @@ title: Academic Portfolio
         </div>
     </li>
 
+    <!-- PUBLICATION 3 -->
     <li style="margin-bottom: 28px; line-height: 1.6; color: #24292f;">
         <div style="font-size: 1.1em; font-weight: 600; color: #24292f; margin-bottom: 4px;">
             A Survey on Bridging EEG Signals and Generative AI
@@ -103,6 +120,7 @@ title: Academic Portfolio
 
 ## Education {#education}
 
+<!-- UT AUSTIN ENTRY -->
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 24px; margin-bottom: 30px;">
     <div style="flex-shrink: 0; width: 130px; display: flex; justify-content: flex-start;">
         <img src="assets/ut-austin.svg" alt="UT Austin Logo" style="width: 120px; height: auto;">
@@ -127,6 +145,7 @@ title: Academic Portfolio
     </div>
 </div>
 
+<!-- UT ARLINGTON ENTRY -->
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 24px; margin-bottom: 30px;">
     <div style="flex-shrink: 0; width: 130px; display: flex; justify-content: flex-start;">
         <img src="assets/ut-arlington.svg" alt="UT Arlington Logo" style="width: 120px; height: auto;">
@@ -196,6 +215,7 @@ title: Academic Portfolio
 ## Awards, Grants & Recognitions {#awards}
 
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
+    <!-- Award 1 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Presidential Scholarship ($108,000)</strong> &middot; UT Arlington</span>
@@ -206,6 +226,7 @@ title: Academic Portfolio
         </div>
     </li>
     
+    <!-- Award 2 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>NSF REU Research Awards (2x Recipient)</strong> &middot; National Science Foundation</span>
@@ -220,6 +241,7 @@ title: Academic Portfolio
         </div>
     </li>
 
+    <!-- Award 3 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>NIH Institutional Research Grant Funding</strong> &middot; National Institutes of Health</span>
@@ -230,6 +252,7 @@ title: Academic Portfolio
         </div>
     </li>
 
+    <!-- Award 4 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Undergraduate Research Excellence (Rank 3)</strong> &middot; College of Engineering</span>
@@ -240,6 +263,7 @@ title: Academic Portfolio
         </div>
     </li>
 
+    <!-- Award 5 -->
     <li style="margin-bottom: 8px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Undergraduate Research Appreciation Award</strong> &middot; UT Arlington Research Institute</span>
@@ -252,45 +276,125 @@ title: Academic Portfolio
 </ul>
 
 <style>
+    /* Entirely hides the theme's default layout header that was rendering in blue */
+    header.site-header, .site-header, #masthead, .page-header {
+        display: none !important;
+    }
+
     /* Smooth Scroll configuration */
     html {
         scroll-behavior: smooth;
-        scroll-padding-top: 70px; /* Ensures header layout does not clip the section headings */
+        scroll-padding-top: 90px;
     }
 
-    /* Sticky Navigation Structure */
+    /* Beautiful Glassmorphism Floating Top Bar */
     .sticky-nav {
         position: -webkit-sticky; /* Safari support */
         position: sticky;
-        top: 0;
+        top: 15px; 
         z-index: 1000;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #ffffff;
-        padding: 15px 20px;
-        border-bottom: 1px solid #e1e4e8;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+        flex-wrap: wrap; /* Allows panel drop down space on mobile */
+        
+        /* Glass styling */
+        background-color: rgba(255, 255, 255, 0.8); 
+        -webkit-backdrop-filter: blur(12px);
+        backdrop-filter: blur(12px); 
+        
+        padding: 12px 24px;
+        border: 1px solid rgba(225, 228, 232, 0.6); 
+        border-radius: 12px; 
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
     }
 
     .nav-name {
         font-size: 1.25em;
         font-weight: 700;
         color: #24292f !important;
+        letter-spacing: -0.3px;
+    }
+
+    /* Desktop Navigation link configuration */
+    .nav-links {
+        display: flex;
+        align-items: center;
     }
 
     .nav-links a {
-        margin-left: 18px;
-        font-size: 0.95em;
-        font-weight: 500;
+        margin-left: 20px;
+        font-size: 0.93em;
+        font-weight: 600;
         color: #57606a !important;
         text-decoration: none !important;
-        transition: color 0.2s ease;
+        transition: all 0.2s ease-in-out;
     }
 
     .nav-links a:hover {
         color: #0366d6 !important;
-        text-decoration: none !important;
+    }
+
+    /* Hiding toggle logic mechanics on Desktop layouts */
+    .nav-toggle {
+        display: none;
+    }
+    
+    .nav-toggle-label {
+        display: none;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 22px;
+        height: 16px;
+    }
+
+    .nav-toggle-label span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #24292f;
+        border-radius: 2px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    /* MOBILE SPECIFIC MEDIA QUERY RENDERING */
+    @media screen and (max-width: 768px) {
+        .nav-toggle-label {
+            display: flex; /* Shows hamburger icon */
+        }
+
+        .nav-links {
+            display: none; /* Collapses text menu row natively */
+            flex-direction: column;
+            width: 100%;
+            margin-top: 15px;
+            padding-top: 5px;
+            border-top: 1px solid rgba(225, 228, 232, 0.4);
+        }
+
+        .nav-links a {
+            margin: 10px 0;
+            margin-left: 0;
+            width: 100%;
+            font-size: 1.05em;
+        }
+
+        /* Checkbox Hack Magic: When hamburger button is clicked, expand dropdown links smoothly */
+        .nav-toggle:checked ~ .nav-links {
+            display: flex;
+        }
+
+        /* Pure CSS Interactive animation for the Hamburger icon transforming to an 'X' close pattern */
+        .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+            transform: translateY(7px) rotate(45deg);
+        }
+        .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+            opacity: 0;
+        }
+        .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+            transform: translateY(-7px) rotate(-45deg);
+        }
     }
 
     /* Global layout color unification */
@@ -298,20 +402,11 @@ title: Academic Portfolio
         color: #24292f !important;
     }
     
-    /* Standardizes normal inline contextual links */
     p a, li a, div a:not([style*="background-color"]) {
         color: #0366d6 !important;
         text-decoration: none !important;
     }
     p a:hover, li a:hover, div a:hover {
         text-decoration: underline !important;
-    }
-
-    /* FORCES your theme's site header text to remain charcoal black */
-    header a, .site-title, h1, h1 a, a.site-title, .site-header a, .site-header a:visited {
-        pointer-events: none !important;
-        cursor: default !important;
-        text-decoration: none !important;
-        color: #24292f !important;
     }
 </style>
