@@ -162,35 +162,93 @@ title: Academic Portfolio
     </li>
 </ul>
 
-## Awards & Honors
+## Teaching & Mentorship
+
+### Research Mentorship
+<ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 24px;">
+    <li style="margin-bottom: 8px;">
+        <strong>Undergraduate Research Mentor</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2025 &ndash; 2026</span>
+        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
+            Mentored an undergraduate researcher exploring multimodal machine learning. Co-guided her through project frameworks and research methodologies, directly supporting the execution of her Honors Bachelor's Thesis tied to our core deep learning pipeline.
+        </div>
+    </li>
+</ul>
+
+### Teaching & Tutoring
+<ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
+    <li style="margin-bottom: 12px;">
+        <strong>Graduate Teaching Assistant</strong> &middot; UT Austin <span style="font-size: 0.9em; color: #57606a; float: right;">2024 &ndash; 2026</span>
+        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
+            Served as a TA for graduate-level courses within the Information Science domain. Conducted weekly office hours, provided conceptual guidance on machine learning applications, and managed evaluation frameworks for complex technical assignments.
+        </div>
+    </li>
+    <li style="margin-bottom: 8px;">
+        <strong>Undergraduate Academic Tutor</strong> &middot; UT Arlington <span style="font-size: 0.9em; color: #57606a; float: right;">2021 &ndash; 2024</span>
+        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
+            Provided high-impact 1-on-1 and drop-in academic instruction across multiple departments. Covered core Computer Science curricula (Data Structures & Algorithms, Software Engineering), advanced Mathematics (Calculus I–III, Linear Algebra), and foundational courses in Philosophy and English.
+        </div>
+    </li>
+</ul>
+
+## Awards, Grants & Recognitions
 
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
-    <!-- Bullet 2 -->
-    <li style="margin-bottom: 8px;">
+    <!-- Award 1 -->
+    <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
-            <span><strong>NIH Research Grant</strong> &middot; National Institutes of Health</span>
-            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2023 &ndash; 2024</span>
+            <span><strong>Presidential Scholarship ($108,000)</strong> &middot; UT Arlington</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2020 &ndash; 2024</span>
+        </div>
+        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
+            The university's premier undergraduate merit award, covering full tuition and fees for four years based on exceptional academic entry credentials.
         </div>
     </li>
-    <!-- Bullet 3 -->
-    <li style="margin-bottom: 8px;">
+    
+    <!-- Award 2 -->
+    <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
-            <span><strong>NSF REU Award (2x Recipient)</strong> &middot; National Science Foundation</span>
+            <span><strong>NSF REU Research Awards (2x Recipient)</strong> &middot; National Science Foundation</span>
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2022 &ndash; 2024</span>
         </div>
+        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
+            Funded undergraduate research fellowships supporting two distinct initiatives:
+            <ul style="margin-top: 4px; margin-bottom: 0; padding-left: 20px; list-style-type: circle;">
+                <li><strong>Assistive Robotics (2022–2023):</strong> Co-designed an autonomous drone architecture for visually impaired indoor navigation. This work served as a cornerstone asset for my subsequent appointment as an Undergraduate Research Assistant at the UT Arlington Research Institute (UTARI).</li>
+                <li><strong>Generative AI Systems (2023–2024):</strong> Developed an early-stage AI-based framework designed to convert raw text prompts into structured educational video content.</li>
+            </ul>
+        </div>
     </li>
-    <!-- Bullet 4 -->
+
+    <!-- Award 3 -->
+    <li style="margin-bottom: 16px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
+            <span><strong>NIH Institutional Research Grant Funding</strong> &middot; National Institutes of Health</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2023 &ndash; 2024</span>
+        </div>
+        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
+            Competitively selected into an institutional research cohort funded by the NIH to engineer an autonomous medical supply cart, also a national presentation at the BMES 2023 Annual Meeting in Seattle.
+        </div>
+    </li>
+
+    <!-- Award 4 -->
+    <li style="margin-bottom: 16px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
+            <span><strong>Undergraduate Research Excellence (Rank 3)</strong> &middot; College of Engineering</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2023</span>
+        </div>
+        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
+            Ranked third overall across the entire College of Engineering for competitive undergraduate research project demonstrations, awarded specifically for the engineering design and execution of the assistive navigation drone system.
+        </div>
+    </li>
+
+    <!-- Award 5 -->
     <li style="margin-bottom: 8px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Undergraduate Research Appreciation Award</strong> &middot; UTARI</span>
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2024</span>
         </div>
-    </li>
-    <!-- Bullet 5 -->
-    <li style="margin-bottom: 8px;">
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
-            <span><strong>Undergraduate Research Rank 3</strong> &middot; College of Engineering, UT Arlington</span>
-            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2023</span>
+        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
+            Awarded by the UT Arlington Research Institute in recognition of technical contributions to institutional computer vision, photogrammetry, and robotics projects.
         </div>
     </li>
 </ul>
