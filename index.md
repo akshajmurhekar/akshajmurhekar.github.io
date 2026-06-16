@@ -41,7 +41,7 @@ title: Academic Portfolio
     
     <!-- Left Column: Centered Image & Contact Links (Inspired by Screenshot 2026-06-15 at 2.38.53 PM.jpg) -->
     <div style="flex-shrink: 0; width: 300px; max-width: 100%; display: flex; flex-direction: column; align-items: center; text-align: center;">
-        <img src="assets/headshot.png" alt="Akshaj Murhekar" style="width: 100%; border-radius: 8px; margin-bottom: 20px; background: transparent !important; border: none !important; padding: 0 !important;">
+        <img src="assets/headshot.webp" alt="Akshaj Murhekar" style="width: 100%; border-radius: 8px; margin-bottom: 20px; background: transparent !important; border: none !important; padding: 0 !important;">
         
         <!-- Clean Row of Normalized Favicons from your local assets -->
         <div style="display: flex; justify-content: center; align-items: center; gap: 22px; margin-bottom: 14px;">
