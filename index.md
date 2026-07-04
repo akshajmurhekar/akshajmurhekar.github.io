@@ -587,6 +587,11 @@ title: Academic Portfolio
         padding: 1px; /* The thickness of your gradient border */
         background: rgba(225, 228, 232, 0.4);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        
+        /* MOBILE FIX: Forces Safari/Chrome on iOS to strictly respect corner clipping during animation */
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-mask-image: -webkit-radial-gradient(white, black);
     }
 
     /* The rotating canvas element hidden behind the card content */
@@ -597,7 +602,6 @@ title: Academic Portfolio
         left: -50%;
         width: 200%;
         height: 200%;
-        /* Premium multi-tone gradient blending UT Orange, Link Blue, and a bright transition accent */
         background: conic-gradient(
             from 0deg,
             #BF5700 0deg,
@@ -605,6 +609,9 @@ title: Academic Portfolio
             #ff8f3d 240deg,
             #BF5700 360deg
         );
+        
+        /* MOBILE FIX: Enables hardware GPU acceleration for stutter-free scrolling on phones */
+        -webkit-animation: spin-gradient 6s linear infinite;
         animation: spin-gradient 6s linear infinite;
         z-index: 0;
     }
@@ -613,8 +620,8 @@ title: Academic Portfolio
     .news-card-content {
         position: relative;
         z-index: 1;
-        background: #ffffff; /* Solid backdrop blocks out the inner spinning color */
-        border-radius: 11px; /* Slightly tighter radius to nest perfectly inside the wrapper */
+        background: #ffffff; 
+        border-radius: 11px; /* Nestles cleanly inside the 12px wrapper */
         padding: 20px 24px;
     }
 
@@ -631,13 +638,14 @@ title: Academic Portfolio
         border-radius: 20px;
     }
 
-    /* Smooth 360-degree rotation loop */
+    /* Keyframes with standard & webkit prefixes for maximum cross-platform reliability */
+    @-webkit-keyframes spin-gradient {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
     @keyframes spin-gradient {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
     }
 </style>
