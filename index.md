@@ -89,36 +89,25 @@ title: Academic Portfolio
     </div>
 </div>
 
-<!-- BEAUTIFIED NEWS FLASH CARD BLOCK -->
-<div class="news-card" style="margin-top: 40px; margin-bottom: 45px;">
-    <!-- Top Row: Badge and Accent Line -->
-    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 18px;">
-        <span class="news-badge">News Updates</span>
-        <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(3, 102, 214, 0.15), transparent);"></div>
+<!-- BEAUTIFIED NEWS FLASH CARD BLOCK WITH ROTATING GRADIENT BORDER -->
+<div class="news-card-wrapper" style="margin-top: 40px; margin-bottom: 45px;">
+    <div class="news-card-content">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+            <span class="news-badge">News</span>
+        </div>
+        <ul style="list-style-type: none; padding-left: 0; margin: 0; line-height: 1.6;">
+            <!-- Entry 1 -->
+            <li style="margin-bottom: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
+                <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">July 2026:</span>
+                <span>Our paper <strong>SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹</span>
+            </li>
+            <!-- Entry 2 -->
+            <li style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
+                <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">May 2026:</span>
+                <span>Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>. 🎓</span>
+            </li>
+        </ul>
     </div>
-    
-    <!-- Timeline List -->
-    <ul style="list-style-type: none; padding-left: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
-        <!-- Entry 1 -->
-        <li class="news-item">
-            <div class="news-date-wrapper">
-                <span class="news-date">Jul 2026</span>
-            </div>
-            <div class="news-content">
-                Our paper <a href="https://arxiv.org/abs/2603.17109" target="_blank" style="font-weight: 600; text-decoration: none;">SENSE</a> was officially accepted to <strong style="color: #24292f;">ICMI 2026</strong> in Naples, Italy! 🇮🇹
-            </div>
-        </li>
-        
-        <!-- Entry 2 -->
-        <li class="news-item">
-            <div class="news-date-wrapper">
-                <span class="news-date">May 2026</span>
-            </div>
-            <div class="news-content">
-                Graduated with an M.S. in Information Science from <strong style="color: #24292f;">The University of Texas at Austin</strong>. 
-            </div>
-        </li>
-    </ul>
 </div>
 
 
@@ -590,89 +579,65 @@ title: Academic Portfolio
         background: transparent !important;
     }
 
-    /* Premium News Card Container */
-    .news-card {
+    /* Main outer wrapper that handles the clipping constraint */
+    .news-card-wrapper {
         position: relative;
-        padding: 24px 28px;
-        background: linear-gradient(180deg, #ffffff 0%, #fdfdfd 100%);
-        border-radius: 14px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.02);
-        z-index: 1;
+        overflow: hidden;
+        border-radius: 12px;
+        padding: 1px; /* The thickness of your gradient border */
+        background: rgba(225, 228, 232, 0.4);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
     }
 
-    /* Crisp High-Res Multicolored Border Overlay */
-    .news-card::before {
-        content: "";
+    /* The rotating canvas element hidden behind the card content */
+    .news-card-wrapper::before {
+        content: '';
         position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        border-radius: 14px;
-        padding: 1px; 
-        background: linear-gradient(135deg, #BF5700 0%, #0366d6 40%, rgba(225, 228, 232, 0.6) 100%);
-        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-        pointer-events: none;
-        z-index: -1;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        /* Premium multi-tone gradient blending UT Orange, Link Blue, and a bright transition accent */
+        background: conic-gradient(
+            from 0deg,
+            #BF5700 0deg,
+            #0366d6 120deg,
+            #ff8f3d 240deg,
+            #BF5700 360deg
+        );
+        animation: spin-gradient 6s linear infinite;
+        z-index: 0;
     }
 
-    /* Sleek Modern Badge */
+    /* Core card content overlaying the moving background canvas */
+    .news-card-content {
+        position: relative;
+        z-index: 1;
+        background: #ffffff; /* Solid backdrop blocks out the inner spinning color */
+        border-radius: 11px; /* Slightly tighter radius to nest perfectly inside the wrapper */
+        padding: 20px 24px;
+    }
+
+    /* Clean solid news indicator badge */
     .news-badge {
         display: inline-block;
-        padding: 4px 12px;
-        background: linear-gradient(135deg, #BF5700 0%, #d66508 100%);
+        padding: 3px 10px;
+        background-color: #BF5700;
         color: #ffffff !important;
         font-weight: 700;
-        font-size: 0.78em;
+        font-size: 0.82em;
         text-transform: uppercase;
-        letter-spacing: 0.8px;
-        border-radius: 6px;
-        box-shadow: 0 2px 8px rgba(191, 87, 0, 0.2);
+        letter-spacing: 0.5px;
+        border-radius: 20px;
     }
 
-    /* News Layout Row Alignment */
-    .news-item {
-        display: flex;
-        align-items: flex-start;
-        gap: 16px;
-    }
-
-    /* Clean Date Pill Container */
-    .news-date-wrapper {
-        flex-shrink: 0;
-        width: 85px;
-    }
-
-    .news-date {
-        display: inline-block;
-        padding: 2px 8px;
-        background-color: rgba(191, 87, 0, 0.07);
-        color: #BF5700 !important;
-        font-weight: 700;
-        font-size: 0.85em;
-        text-align: center;
-        border-radius: 6px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    /* Content Area Typography */
-    .news-content {
-        font-size: 0.96em;
-        line-height: 1.5;
-        color: #24292f;
-    }
-
-    /* Responsive adjustments for narrow mobile layouts */
-    @media screen and (max-width: 576px) {
-        .news-item {
-            flex-direction: column;
-            gap: 6px;
+    /* Smooth 360-degree rotation loop */
+    @keyframes spin-gradient {
+        0% {
+            transform: rotate(0deg);
         }
-        .news-date-wrapper {
-            width: auto;
-        }
-        .news-card {
-            padding: 20px;
+        100% {
+            transform: rotate(360deg);
         }
     }
 </style>
