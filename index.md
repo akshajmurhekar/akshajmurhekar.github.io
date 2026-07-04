@@ -103,7 +103,7 @@ title: Academic Portfolio
         <!-- Entry 2 -->
         <li style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
             <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">May 2026:</span>
-            <span>Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>. 🎓</span>
+            <span>Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>.</span>
         </li>
     </ul>
 </div>
