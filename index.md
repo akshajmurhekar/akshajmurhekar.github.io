@@ -89,21 +89,34 @@ title: Academic Portfolio
     </div>
 </div>
 
-<!-- NEWS FLASH CARD BLOCK -->
+<!-- BEAUTIFIED NEWS FLASH CARD BLOCK -->
 <div class="news-card" style="margin-top: 40px; margin-bottom: 45px;">
-    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
-        <span class="news-badge">News</span>
+    <!-- Top Row: Badge and Accent Line -->
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 18px;">
+        <span class="news-badge">News Updates</span>
+        <div style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(3, 102, 214, 0.15), transparent);"></div>
     </div>
-    <ul style="list-style-type: none; padding-left: 0; margin: 0; line-height: 1.6;">
+    
+    <!-- Timeline List -->
+    <ul style="list-style-type: none; padding-left: 0; margin: 0; display: flex; flex-direction: column; gap: 16px;">
         <!-- Entry 1 -->
-        <li style="margin-bottom: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
-            <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">July 2026:</span>
-            <span>Our paper <strong>SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹</span>
+        <li class="news-item">
+            <div class="news-date-wrapper">
+                <span class="news-date">Jul 2026</span>
+            </div>
+            <div class="news-content">
+                Our paper <a href="https://arxiv.org/abs/2603.17109" target="_blank" style="font-weight: 600; text-decoration: none;">SENSE</a> was officially accepted to <strong style="color: #24292f;">ICMI 2026</strong> in Naples, Italy! 🇮🇹
+            </div>
         </li>
+        
         <!-- Entry 2 -->
-        <li style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
-            <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">May 2026:</span>
-            <span>Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>.</span>
+        <li class="news-item">
+            <div class="news-date-wrapper">
+                <span class="news-date">May 2026</span>
+            </div>
+            <div class="news-content">
+                Graduated with an M.S. in Information Science from <strong style="color: #24292f;">The University of Texas at Austin</strong>. 
+            </div>
         </li>
     </ul>
 </div>
@@ -577,23 +590,24 @@ title: Academic Portfolio
         background: transparent !important;
     }
 
-    /* News Section Card with Multicolored Gradient Border */
+    /* Premium News Card Container */
     .news-card {
         position: relative;
-        padding: 20px 24px;
-        background: #ffffff;
-        border-radius: 12px;
+        padding: 24px 28px;
+        background: linear-gradient(180deg, #ffffff 0%, #fdfdfd 100%);
+        border-radius: 14px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02), 0 1px 2px rgba(0, 0, 0, 0.02);
         z-index: 1;
     }
 
-    /* Creates the precise, ultra-thin multicolored border overlay */
+    /* Crisp High-Res Multicolored Border Overlay */
     .news-card::before {
         content: "";
         position: absolute;
         top: 0; left: 0; right: 0; bottom: 0;
-        border-radius: 12px;
-        padding: 1px; /* Border thickness */
-        background: linear-gradient(135deg, #BF5700 0%, #0366d6 50%, #57606a 100%);
+        border-radius: 14px;
+        padding: 1px; 
+        background: linear-gradient(135deg, #BF5700 0%, #0366d6 40%, rgba(225, 228, 232, 0.6) 100%);
         -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
         -webkit-mask-composite: xor;
         mask-composite: exclude;
@@ -601,16 +615,64 @@ title: Academic Portfolio
         z-index: -1;
     }
 
-    /* Clean solid news indicator badge */
+    /* Sleek Modern Badge */
     .news-badge {
         display: inline-block;
-        padding: 3px 10px;
-        background-color: #BF5700;
+        padding: 4px 12px;
+        background: linear-gradient(135deg, #BF5700 0%, #d66508 100%);
         color: #ffffff !important;
         font-weight: 700;
-        font-size: 0.82em;
+        font-size: 0.78em;
         text-transform: uppercase;
-        letter-spacing: 0.5px;
-        border-radius: 20px;
+        letter-spacing: 0.8px;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(191, 87, 0, 0.2);
+    }
+
+    /* News Layout Row Alignment */
+    .news-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    /* Clean Date Pill Container */
+    .news-date-wrapper {
+        flex-shrink: 0;
+        width: 85px;
+    }
+
+    .news-date {
+        display: inline-block;
+        padding: 2px 8px;
+        background-color: rgba(191, 87, 0, 0.07);
+        color: #BF5700 !important;
+        font-weight: 700;
+        font-size: 0.85em;
+        text-align: center;
+        border-radius: 6px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Content Area Typography */
+    .news-content {
+        font-size: 0.96em;
+        line-height: 1.5;
+        color: #24292f;
+    }
+
+    /* Responsive adjustments for narrow mobile layouts */
+    @media screen and (max-width: 576px) {
+        .news-item {
+            flex-direction: column;
+            gap: 6px;
+        }
+        .news-date-wrapper {
+            width: auto;
+        }
+        .news-card {
+            padding: 20px;
+        }
     }
 </style>
