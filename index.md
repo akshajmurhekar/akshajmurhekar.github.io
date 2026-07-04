@@ -89,6 +89,25 @@ title: Academic Portfolio
     </div>
 </div>
 
+<!-- NEWS FLASH CARD BLOCK -->
+<div class="news-card" style="margin-top: 40px; margin-bottom: 45px;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+        <span class="news-badge">News</span>
+    </div>
+    <ul style="list-style-type: none; padding-left: 0; margin: 0; line-height: 1.6;">
+        <!-- Entry 1 -->
+        <li style="margin-bottom: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
+            <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">July 2026:</span>
+            <span>Our paper <strong>SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹</span>
+        </li>
+        <!-- Entry 2 -->
+        <li style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
+            <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">May 2026:</span>
+            <span>Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>. 🎓</span>
+        </li>
+    </ul>
+</div>
+
 
 ## Research & Preprints {#research}
 
@@ -556,5 +575,42 @@ title: Academic Portfolio
     color: transparent !important;
     text-decoration: none !important;
     background: transparent !important;
+
+    /* News Section Card with Multicolored Gradient Border */
+    .news-card {
+        position: relative;
+        padding: 20px 24px;
+        background: #ffffff;
+        border-radius: 12px;
+        z-index: 1;
+    }
+
+    /* Creates the precise, ultra-thin multicolored border overlay */
+    .news-card::before {
+        content: "";
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        border-radius: 12px;
+        padding: 1px; /* Border thickness */
+        background: linear-gradient(135deg, #BF5700 0%, #0366d6 50%, #57606a 100%);
+        -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    /* Clean solid news indicator badge */
+    .news-badge {
+        display: inline-block;
+        padding: 3px 10px;
+        background-color: #BF5700;
+        color: #ffffff !important;
+        font-weight: 700;
+        font-size: 0.82em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-radius: 20px;
+    }
 }
 </style>
