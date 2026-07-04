@@ -572,9 +572,10 @@ title: Academic Portfolio
         text-decoration: underline !important;
     }
     div a.profile-icon-link:hover {
-    color: transparent !important;
-    text-decoration: none !important;
-    background: transparent !important;
+        color: transparent !important;
+        text-decoration: none !important;
+        background: transparent !important;
+    }
 
     /* News Section Card with Multicolored Gradient Border */
     .news-card {
@@ -612,5 +613,4 @@ title: Academic Portfolio
         letter-spacing: 0.5px;
         border-radius: 20px;
     }
-}
 </style>
