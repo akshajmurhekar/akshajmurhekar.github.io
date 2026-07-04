@@ -579,14 +579,18 @@ title: Academic Portfolio
         background: transparent !important;
     }
 
-    /* Main outer wrapper that handles the clipping constraint */
+    /* Main outer wrapper that handles the clipping constraint and soft depth shadow */
     .news-card-wrapper {
         position: relative;
         overflow: hidden;
         border-radius: 12px;
         padding: 1px; /* The thickness of your gradient border */
         background: rgba(225, 228, 232, 0.4);
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        
+        /* PREMIUM DOUBLE-LAYER SHADOW: Creates a modern, high-end ambient occlusion lift */
+        box-shadow: 
+            0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+            0 10px 25px -5px rgba(0, 0, 0, 0.08);
         
         /* MOBILE FIX: Forces Safari/Chrome on iOS to strictly respect corner clipping during animation */
         -webkit-transform: translateZ(0);
