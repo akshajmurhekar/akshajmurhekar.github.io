@@ -384,10 +384,7 @@ title: Academic Portfolio
     </script>
 </div>
 
-
 <style>
-
-    /* Default footer layout styling for desktop monitors */
     .site-footer {
         display: flex;
         flex-wrap: wrap;
@@ -399,7 +396,6 @@ title: Academic Portfolio
         color: #57606a;
     }
 
-    /* Mobile-specific footer rule: Forces all layout rows to center neatly on phone panels */
     @media screen and (max-width: 768px) {
         .site-footer {
             flex-direction: column;
@@ -407,13 +403,11 @@ title: Academic Portfolio
             text-align: center;
             gap: 12px;
         }
-        
         .site-footer > div {
             justify-content: center;
         }
     }
 
-    /* ULTIMATE PRIMER THEME OVERRIDE: Targets the exact structural container structure that forces the header */
     .container-lg > h1,
     .container-lg > h1 a,
     .container-md > h1,
@@ -429,33 +423,29 @@ title: Academic Portfolio
         pointer-events: none !important;
     }
 
-    /* Normalizes the sizing, resets theme-forced backgrounds, and sets gray tone */
     .profile-icon {
         width: 20px !important;
         height: 20px !important;
-        background: transparent !important; /* Strips out the gray box in Screenshot 2026-06-15 at 3.05.22 PM.png */
-        border: none !important;            /* Strips out any forced theme border outlines */
-        padding: 0 !important;              /* Strips layout spacing bloating */
+        background: transparent !important;
+        border: none !important;
+        padding: 0 !important;
         margin: 0 !important;
         box-shadow: none !important;
         filter: invert(38%) sepia(8%) saturate(638%) hue-rotate(173deg) brightness(93%) contrast(89%); 
         transition: filter 0.2s ease-in-out;
     }
 
-    /* Smooth transition over to matching link blue (#0366d6) on cursor hover */
     .profile-icon-link:hover .profile-icon {
         filter: invert(31%) sepia(89%) saturate(2304%) hue-rotate(204deg) brightness(91%) contrast(98%) !important; 
     }
 
-    /* Smooth Scroll configuration */
     html {
         scroll-behavior: smooth;
         scroll-padding-top: 90px;
     }
 
-    /* Beautiful Glassmorphism Floating Top Bar */
     .sticky-nav {
-        position: -webkit-sticky; /* Safari support */
+        position: -webkit-sticky;
         position: sticky;
         top: 15px; 
         z-index: 1000;
@@ -463,12 +453,9 @@ title: Academic Portfolio
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap; 
-        
-        /* Glass styling */
         background-color: rgba(255, 255, 255, 0.8); 
         -webkit-backdrop-filter: blur(12px);
         backdrop-filter: blur(12px); 
-        
         padding: 12px 24px;
         border: 1px solid rgba(225, 228, 232, 0.6); 
         border-radius: 12px; 
@@ -482,7 +469,6 @@ title: Academic Portfolio
         letter-spacing: -0.3px;
     }
 
-    /* Desktop Navigation link configuration */
     .nav-links {
         display: flex;
         align-items: center;
@@ -501,7 +487,6 @@ title: Academic Portfolio
         color: #0366d6 !important;
     }
 
-    /* Hiding toggle logic mechanics on Desktop layouts */
     .nav-toggle {
         display: none;
     }
@@ -524,12 +509,10 @@ title: Academic Portfolio
         transition: all 0.2s ease-in-out;
     }
 
-    /* MOBILE SPECIFIC MEDIA QUERY RENDERING */
     @media screen and (max-width: 768px) {
         .nav-toggle-label {
             display: flex; 
         }
-
         .nav-links {
             display: none; 
             flex-direction: column;
@@ -538,18 +521,15 @@ title: Academic Portfolio
             padding-top: 5px;
             border-top: 1px solid rgba(225, 228, 232, 0.4);
         }
-
         .nav-links a {
             margin: 10px 0;
             margin-left: 0;
             width: 100%;
             font-size: 1.05em;
         }
-
         .nav-toggle:checked ~ .nav-links {
             display: flex;
         }
-
         .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
             transform: translateY(7px) rotate(45deg);
         }
@@ -561,7 +541,6 @@ title: Academic Portfolio
         }
     }
 
-    /* Global layout color unification */
     body, p, li, div {
         color: #24292f !important;
     }
@@ -579,26 +558,28 @@ title: Academic Portfolio
         background: transparent !important;
     }
 
-    /* Main outer wrapper that handles the clipping constraint and soft depth shadow */
+    /* FIX: Unclipped outer shadow container */
+    .news-shadow-container {
+        position: relative;
+        border-radius: 12px;
+        /* PREMIUM DOUBLE-LAYER SHADOW: Modern subtle depth matrix */
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.04), 
+            0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Inner rotating layout container */
     .news-card-wrapper {
         position: relative;
         overflow: hidden;
         border-radius: 12px;
-        padding: 1px; /* The thickness of your gradient border */
+        padding: 1px;
         background: rgba(225, 228, 232, 0.4);
-        
-        /* PREMIUM DOUBLE-LAYER SHADOW: Creates a modern, high-end ambient occlusion lift */
-        box-shadow: 
-            0 4px 6px -1px rgba(0, 0, 0, 0.05), 
-            0 10px 25px -5px rgba(0, 0, 0, 0.08);
-        
-        /* MOBILE FIX: Forces Safari/Chrome on iOS to strictly respect corner clipping during animation */
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
         -webkit-mask-image: -webkit-radial-gradient(white, black);
     }
 
-    /* The rotating canvas element hidden behind the card content */
     .news-card-wrapper::before {
         content: '';
         position: absolute;
@@ -613,23 +594,19 @@ title: Academic Portfolio
             #ff8f3d 240deg,
             #BF5700 360deg
         );
-        
-        /* MOBILE FIX: Enables hardware GPU acceleration for stutter-free scrolling on phones */
         -webkit-animation: spin-gradient 6s linear infinite;
         animation: spin-gradient 6s linear infinite;
         z-index: 0;
     }
 
-    /* Core card content overlaying the moving background canvas */
     .news-card-content {
         position: relative;
         z-index: 1;
         background: #ffffff; 
-        border-radius: 11px; /* Nestles cleanly inside the 12px wrapper */
+        border-radius: 11px;
         padding: 20px 24px;
     }
 
-    /* Clean solid news indicator badge */
     .news-badge {
         display: inline-block;
         padding: 3px 10px;
@@ -642,7 +619,6 @@ title: Academic Portfolio
         border-radius: 20px;
     }
 
-    /* Keyframes with standard & webkit prefixes for maximum cross-platform reliability */
     @-webkit-keyframes spin-gradient {
         0% { -webkit-transform: rotate(0deg); }
         100% { -webkit-transform: rotate(360deg); }
