@@ -345,27 +345,28 @@ title: Academic Portfolio
     
     <!-- Right Side: Discreet Unique View Counter Badge -->
     <div style="display: flex; align-items: center; gap: 6px; font-size: 0.88em; color: #57606a;">
-        <span>Views:</span>
-        <!-- A clean HTML pill matching your exact font size, rounded corners, and UT Burnt Orange style -->
+        <!-- The trigger target has been shifted to this label -->
+        <span id="blog-trigger" style="cursor: pointer; user-select: none;">Views:</span>
         <span id="portfolio-views" style="display: inline-block; padding: 2px 8px; background-color: #BF5700; color: #ffffff; font-weight: 600; font-size: 0.9em; border-radius: 4px; min-width: 12px; text-align: center;">...</span>
     </div>
 
     <script>
         (async function() {
             const viewPill = document.getElementById('portfolio-views');
+            const triggerText = document.getElementById('blog-trigger');
             const storageKey = 'akshajmurhekar_github_io_main_page_v2';
             const hasVisited = sessionStorage.getItem('has_visited_portfolio_session');
             
-            // --- HIDDEN BLOG UNLOCK LOGIC ---
+            // --- FIXED HIDDEN BLOG LOGIC ---
             let clickCount = 0;
-            viewPill.style.cursor = 'pointer'; 
             
-            // If they already unlocked it this session, make a single click take them there
+            // Subtle indicator if already unlocked during this browser session
             if (sessionStorage.getItem('blog_unlocked') === 'true') {
-                viewPill.title = "Go to Hidden Blog";
+                triggerText.title = "Go to Hidden Blog";
             }
 
-            viewPill.addEventListener('click', () => {
+            triggerText.addEventListener('click', () => {
+                // If unlocked, a single direct click on the "Views:" text handles the route
                 if (sessionStorage.getItem('blog_unlocked') === 'true') {
                     window.location.href = '{{ "/blog/" | relative_url }}';
                     return;
