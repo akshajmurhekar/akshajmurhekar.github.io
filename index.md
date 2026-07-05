@@ -90,23 +90,25 @@ title: Academic Portfolio
 </div>
 
 <!-- BEAUTIFIED NEWS FLASH CARD BLOCK WITH ROTATING GRADIENT BORDER -->
-<div class="news-card-wrapper" style="margin-top: 40px; margin-bottom: 45px;">
-    <div class="news-card-content">
-        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
-            <span class="news-badge">News</span>
+<div class="news-shadow-container" style="margin-top: 40px; margin-bottom: 45px;">
+    <div class="news-card-wrapper" style="margin: 0;">
+        <div class="news-card-content">
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
+                <span class="news-badge">News</span>
+            </div>
+            <ul style="list-style-type: none; padding-left: 0; margin: 0; line-height: 1.6;">
+                <!-- Entry 1 -->
+                <li style="margin-bottom: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
+                    <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">July 2026:</span>
+                    <span>Our paper <strong>SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹</span>
+                </li>
+                <!-- Entry 2 -->
+                <li style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
+                    <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">May 2026:</span>
+                    <span>Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>.</span>
+                </li>
+            </ul>
         </div>
-        <ul style="list-style-type: none; padding-left: 0; margin: 0; line-height: 1.6;">
-            <!-- Entry 1 -->
-            <li style="margin-bottom: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
-                <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">July 2026:</span>
-                <span>Our paper <strong>SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹</span>
-            </li>
-            <!-- Entry 2 -->
-            <li style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
-                <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">May 2026:</span>
-                <span>Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>. 🎓</span>
-            </li>
-        </ul>
     </div>
 </div>
 
