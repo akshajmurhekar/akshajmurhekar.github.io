@@ -353,24 +353,39 @@ title: Academic Portfolio
     <script>
         (async function() {
             const viewPill = document.getElementById('portfolio-views');
-            
-            // RESET POINT: I appended '_v2' to the end of this key name. 
-            // Whenever you want to reset your counter to 0 in the future, just change '_v2' to '_v3', '_v4', etc.
             const storageKey = 'akshajmurhekar_github_io_main_page_v2';
-            
-            // Upgraded to sessionStorage so a user's unique status resets when they close the tab/window
             const hasVisited = sessionStorage.getItem('has_visited_portfolio_session');
             
-            try {
-                let url;
-                if (!hasVisited) {
-                    // First time visiting this session! Increment the counter
-                    url = `https://countapi.mileshilliard.com/api/v1/hit/${storageKey}`;
-                    sessionStorage.setItem('has_visited_portfolio_session', 'true');
-                } else {
-                    // Refreshing within the same session: Just read the stable total view count
-                    url = `https://countapi.mileshilliard.com/api/v1/get/${storageKey}`;
+            // --- HIDDEN BLOG UNLOCK LOGIC ---
+            let clickCount = 0;
+            viewPill.style.cursor = 'pointer'; 
+            
+            // If they already unlocked it this session, make a single click take them there
+            if (sessionStorage.getItem('blog_unlocked') === 'true') {
+                viewPill.title = "Go to Hidden Blog";
+            }
+
+            viewPill.addEventListener('click', () => {
+                if (sessionStorage.getItem('blog_unlocked') === 'true') {
+                    window.location.href = '{{ "/blog/" | relative_url }}';
+                    return;
                 }
+                
+                clickCount++;
+                if (clickCount === 5) {
+                    sessionStorage.setItem('blog_unlocked', 'true');
+                    alert("🔒 Hidden space unlocked. Redirecting...");
+                    window.location.href = '{{ "/blog/" | relative_url }}'; 
+                }
+            });
+            // ----------------------------------
+
+            try {
+                let url = hasVisited 
+                    ? `https://countapi.mileshilliard.com/api/v1/get/${storageKey}`
+                    : `https://countapi.mileshilliard.com/api/v1/hit/${storageKey}`;
+                
+                if (!hasVisited) sessionStorage.setItem('has_visited_portfolio_session', 'true');
 
                 const response = await fetch(url);
                 if (response.ok) {
@@ -558,16 +573,6 @@ title: Academic Portfolio
         color: transparent !important;
         text-decoration: none !important;
         background: transparent !important;
-    }
-
-    /* FIX: Unclipped outer shadow container */
-    .news-shadow-container {
-        position: relative;
-        border-radius: 12px;
-        /* PREMIUM DOUBLE-LAYER SHADOW: Modern subtle depth matrix */
-        box-shadow: 
-            0 4px 12px rgba(0, 0, 0, 0.04), 
-            0 12px 30px rgba(0, 0, 0, 0.08);
     }
 
     /* Define a custom property that browser animation engines can interpolate as an angle */
