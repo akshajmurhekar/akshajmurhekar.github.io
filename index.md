@@ -570,35 +570,36 @@ title: Academic Portfolio
             0 12px 30px rgba(0, 0, 0, 0.08);
     }
 
-    /* Inner rotating layout container */
-    .news-card-wrapper {
-        position: relative;
-        overflow: hidden;
-        border-radius: 12px;
-        padding: 1px;
-        background: rgba(225, 228, 232, 0.4);
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        -webkit-mask-image: -webkit-radial-gradient(white, black);
+    /* Define a custom property that browser animation engines can interpolate as an angle */
+    @property --gradient-angle {
+        syntax: '<angle>';
+        initial-value: 0deg;
+        inherits: false;
     }
 
-    .news-card-wrapper::before {
-        content: '';
-        position: absolute;
-        top: -50%;
-        left: -50%;
-        width: 200%;
-        height: 200%;
+    /* FIX: Unclipped outer shadow container */
+    .news-shadow-container {
+        position: relative;
+        border-radius: 12px;
+        box-shadow: 
+            0 4px 12px rgba(0, 0, 0, 0.04), 
+            0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Inner layout container with animated gradient border */
+    .news-card-wrapper {
+        position: relative;
+        border-radius: 12px;
+        padding: 1px; /* The border thickness */
+        /* Dynamically updates the gradient angle based on the CSS variable */
         background: conic-gradient(
-            from 0deg,
+            from var(--gradient-angle),
             #BF5700 0deg,
             #0366d6 120deg,
             #ff8f3d 240deg,
             #BF5700 360deg
         );
-        -webkit-animation: spin-gradient 6s linear infinite;
-        animation: spin-gradient 6s linear infinite;
-        z-index: 0;
+        animation: spin-gradient-clean 6s linear infinite;
     }
 
     .news-card-content {
@@ -621,13 +622,13 @@ title: Academic Portfolio
         border-radius: 20px;
     }
 
-    @-webkit-keyframes spin-gradient {
-        0% { -webkit-transform: rotate(0deg); }
-        100% { -webkit-transform: rotate(360deg); }
-    }
-
-    @keyframes spin-gradient {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
+    /* Clean animation targeting just the angle variable */
+    @keyframes spin-gradient-clean {
+        0% {
+            --gradient-angle: 0deg;
+        }
+        100% {
+            --gradient-angle: 360deg;
+        }
     }
 </style>
