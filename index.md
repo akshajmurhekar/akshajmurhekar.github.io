@@ -367,17 +367,17 @@ title: Academic Portfolio
 
             triggerText.addEventListener('click', () => {
                 // If unlocked, a single direct click on the "Views:" text handles the route
-                if (sessionStorage.getItem('blog_unlocked') === 'true') {
+                <!-- if (sessionStorage.getItem('blog_unlocked') === 'true') {
                     window.location.href = '{{ "/blog/" | relative_url }}';
                     return;
-                }
+                } -->
                 
                 clickCount++;
-                if (clickCount === 5) {
+                <!-- if (clickCount === 5) {
                     sessionStorage.setItem('blog_unlocked', 'true');
                     alert("🔒 Hidden space unlocked. Redirecting...");
                     window.location.href = '{{ "/blog/" | relative_url }}'; 
-                }
+                } -->
             });
             // ----------------------------------
 
