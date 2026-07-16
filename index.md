@@ -345,46 +345,20 @@ title: Academic Portfolio
     
     <!-- Right Side: Discreet Unique View Counter Badge -->
     <div style="display: flex; align-items: center; gap: 6px; font-size: 0.88em; color: #57606a;">
-        <!-- The trigger target has been shifted to this label -->
-        <span id="blog-trigger" style="cursor: pointer; user-select: none;">Views:</span>
+        <span>Views:</span>
         <span id="portfolio-views" style="display: inline-block; padding: 2px 8px; background-color: #BF5700; color: #ffffff; font-weight: 600; font-size: 0.9em; border-radius: 4px; min-width: 12px; text-align: center;">...</span>
     </div>
 
     <script>
         (async function() {
             const viewPill = document.getElementById('portfolio-views');
-            const triggerText = document.getElementById('blog-trigger');
             const storageKey = 'akshajmurhekar_github_io_main_page_v2';
             const hasVisited = sessionStorage.getItem('has_visited_portfolio_session');
-            
-            // --- FIXED HIDDEN BLOG LOGIC ---
-            let clickCount = 0;
-            
-            // Subtle indicator if already unlocked during this browser session
-            if (sessionStorage.getItem('blog_unlocked') === 'true') {
-                triggerText.title = "Go to Hidden Blog";
-            }
-
-            triggerText.addEventListener('click', () => {
-                // If unlocked, a single direct click on the "Views:" text handles the route
-                <!-- if (sessionStorage.getItem('blog_unlocked') === 'true') {
-                    window.location.href = '{{ "/blog/" | relative_url }}';
-                    return;
-                } -->
-                
-                clickCount++;
-                <!-- if (clickCount === 5) {
-                    sessionStorage.setItem('blog_unlocked', 'true');
-                    alert("🔒 Hidden space unlocked. Redirecting...");
-                    window.location.href = '{{ "/blog/" | relative_url }}'; 
-                } -->
-            });
-            // ----------------------------------
 
             try {
                 let url = hasVisited 
-                    ? `https://countapi.mileshilliard.com/api/v1/get/${storageKey}`
-                    : `https://countapi.mileshilliard.com/api/v1/hit/${storageKey}`;
+                    ? `https://countapi.xyz/api/v1/get/${storageKey}`
+                    : `https://countapi.xyz/api/v1/hit/${storageKey}`;
                 
                 if (!hasVisited) sessionStorage.setItem('has_visited_portfolio_session', 'true');
 
