@@ -357,8 +357,8 @@ title: Academic Portfolio
 
             try {
                 let url = hasVisited 
-                    ? `https://countapi.xyz/api/v1/get/${storageKey}`
-                    : `https://countapi.xyz/api/v1/hit/${storageKey}`;
+                    ? `https://countapi.mileshilliard.com/api/v1/get/${storageKey}`
+                    : `https://countapi.mileshilliard.com/api/v1/hit/${storageKey}`;
                 
                 if (!hasVisited) sessionStorage.setItem('has_visited_portfolio_session', 'true');
 
