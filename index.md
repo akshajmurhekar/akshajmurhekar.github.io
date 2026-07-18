@@ -18,22 +18,9 @@ title: Academic Portfolio
 <div class="sticky-nav">
     <div class="nav-name">Akshaj Murhekar</div>
 
-    <!-- Hidden Checkbox & Hamburger Label for Mobile Toggle -->
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-
-    <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#awards">Awards</a>
-        <a href="#ta">TA & Mentoring</a>
-        <!-- Theme Toggle Button -->
+    <!-- Right Side Global Control Container -->
+    <div class="nav-controls">
+        <!-- Theme Toggle Button (Moved Outside nav-links) -->
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
             <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="5"></circle>
@@ -50,6 +37,24 @@ title: Academic Portfolio
                 <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
         </button>
+
+        <!-- Hidden Checkbox & Hamburger Label for Mobile Toggle -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </div>
+
+    <!-- Clean Menu links solely for page anchors -->
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+        <a href="#ta">TA & Mentoring</a>
     </div>
 </div>
 
@@ -554,6 +559,12 @@ title: Academic Portfolio
         align-items: center;
     }
 
+    .nav-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
     .nav-links a {
         margin-left: 20px;
         font-size: 0.93em;
@@ -662,6 +673,11 @@ title: Academic Portfolio
         }
         .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
             transform: translateY(-7px) rotate(-45deg);
+        }
+        /* Make theme button feel natural in mobile bar */
+        .theme-toggle {
+            margin-left: 0;
+            padding: 4px 6px;
         }
     }
 
