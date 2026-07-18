@@ -295,15 +295,17 @@ title: Academic Portfolio
 
 ### Research Mentorship
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 24px;">
-    <li style="margin-bottom: 8px;">
+    <li style="margin-bottom: 12px;">
         <!-- Standardized Flexbox wrapping container to handle mobile drop-downs cleanly -->
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Undergraduate Research Mentor</strong> &middot; UT Austin</span>
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2025 &ndash; 2026</span>
         </div>
-        <div style="font-size: 0.95em; color: #57606a; margin-top: 2px;">
-            Mentored an undergraduate researcher exploring multimodal machine learning. Co-guided her through project frameworks and research methodologies, directly supporting the execution of her Honors Bachelor's Thesis tied to our core deep learning pipeline.
-        </div>
+        <ul style="font-size: 0.95em; color: #57606a; margin-top: 6px; padding-left: 20px; list-style-type: disc;">
+            <li style="margin-bottom: 4px;">Mentored an undergraduate researcher, <a href="https://www.linkedin.com/in/christinal-iu/" target="_blank">Christina Liu</a>, on advanced multimodal machine learning frameworks, directly leading to her co-authorship on our SENSE paper (ICMI 2026).</li>
+            <li style="margin-bottom: 4px;">Guided her through foundational research methodologies, from navigating complex neuro-signal processing literature to structuring rigorous experimental workflows.</li>
+            <li style="margin-bottom: 0px;">Provided technical and academic direction, helping translate deep learning concepts into practice and supporting the completion of her Honors Bachelor's Thesis.</li>
+        </ul>
     </li>
 </ul>
 
