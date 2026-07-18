@@ -18,9 +18,12 @@ title: Academic Portfolio
 <div class="sticky-nav">
     <div class="nav-name">Akshaj Murhekar</div>
 
-    <!-- Right Side Global Control Container -->
+    <!-- Hidden Checkbox remains at the top level -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    
+    <!-- Right Side Global Control Bar -->
     <div class="nav-controls">
-        <!-- Theme Toggle Button (Moved Outside nav-links) -->
+        <!-- Theme Toggle Button -->
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
             <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="5"></circle>
@@ -38,8 +41,7 @@ title: Academic Portfolio
             </svg>
         </button>
 
-        <!-- Hidden Checkbox & Hamburger Label for Mobile Toggle -->
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <!-- Hamburger Label -->
         <label for="nav-toggle" class="nav-toggle-label">
             <span></span>
             <span></span>
@@ -47,7 +49,7 @@ title: Academic Portfolio
         </label>
     </div>
 
-    <!-- Clean Menu links solely for page anchors -->
+    <!-- Menu Links -->
     <div class="nav-links">
         <a href="#about">About</a>
         <a href="#research">Research</a>
@@ -101,7 +103,7 @@ title: Academic Portfolio
             I am a graduate researcher at UT Austin with a focus on language modeling, representation learning, and multimodal deep learning. During my time as an M.S. student, I worked with <a href="https://abhijitmishra.github.io/" target="_blank">Dr. Abhijit Mishra</a> on challenging problems at the intersection of language models and neural signal processing. My research focused on leveraging in-context learning capabilities of Large Language Models (LLMs). Specifically, I developed privacy-preserving neuro-symbolic decoding pipelines and efficient retrieval frameworks designed to bridge the gap between brain activity and text, translating electroencephalography (EEG) signals directly into natural language.
         </p>
 
-        <h3 style="font-size: 1.15em; font-weight: 600; color: #24292f; margin-bottom: 10px;">Research Interests</h3>
+        <h3 style="font-size: 1.15em; font-weight: 600; color: var(--text-primary); margin-bottom: 10px;">Research Interests</h3>
         <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin: 0;">
             <li style="margin-bottom: 4px;"><strong>Multimodal Deep Learning</strong></li>
             <li style="margin-bottom: 4px;"><strong>Neuro-Symbolic Learning</strong></li>
@@ -662,19 +664,19 @@ title: Academic Portfolio
             width: 100%;
             font-size: 1.05em;
         }
+        /* FIX: Selects the sibling nav-links when nav-toggle is checked */
         .nav-toggle:checked ~ .nav-links {
             display: flex;
         }
-        .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
+        .nav-toggle:checked ~ .nav-controls .nav-toggle-label span:nth-child(1) {
             transform: translateY(7px) rotate(45deg);
         }
-        .nav-toggle:checked ~ .nav-toggle-label span:nth-child(2) {
+        .nav-toggle:checked ~ .nav-controls .nav-toggle-label span:nth-child(2) {
             opacity: 0;
         }
-        .nav-toggle:checked ~ .nav-toggle-label span:nth-child(3) {
+        .nav-toggle:checked ~ .nav-controls .nav-toggle-label span:nth-child(3) {
             transform: translateY(-7px) rotate(-45deg);
         }
-        /* Make theme button feel natural in mobile bar */
         .theme-toggle {
             margin-left: 0;
             padding: 4px 6px;
