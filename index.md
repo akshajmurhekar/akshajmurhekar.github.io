@@ -183,7 +183,7 @@ title: Academic Portfolio
 <!-- UT AUSTIN ENTRY -->
 <div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: center; gap: 24px; margin-bottom: 30px;">
     <div style="flex-shrink: 0; width: 130px; display: flex; justify-content: flex-start;">
-        <img src="assets/ut-austin.svg" alt="UT Austin Logo" style="width: 120px; height: auto;">
+        <img src="assets/longhorn-icon.svg" alt="UT Austin Logo" style="width: 120px; height: auto;">
     </div>
     <div style="flex: 1; min-width: 280px; line-height: 1.6;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; margin-bottom: 4px;">
