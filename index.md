@@ -124,21 +124,29 @@ title: Academic Portfolio
             
             <div style="display: flex; flex-direction: column; gap: 16px;">
                 <!-- Entry 1 -->
-                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; padding-bottom: 14px; border-bottom: 1px dashed var(--border-subtle);">
-                    <span style="font-size: 0.85em; font-weight: 700; color: #ffffff !important; background-color: #BF5700; padding: 4px 10px; border-radius: 6px; white-space: nowrap; box-shadow: 0 2px 4px rgba(191, 87, 0, 0.2);">
-                        Jul 2026
-                    </span>
-                    <div style="flex: 1; min-width: 250px; line-height: 1.5; color: var(--text-primary);">
+                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; padding-bottom: 14px; border-bottom: 1px dashed var(--border-subtle);">
+                    <!-- Fixed width container ensuring perfect vertical alignment -->
+                    <div style="flex-shrink: 0; width: 85px; display: flex;">
+                        <span style="font-size: 0.85em; font-weight: 700; color: #ffffff !important; background-color: #BF5700; padding: 4px 10px; border-radius: 6px; white-space: nowrap; box-shadow: 0 2px 4px rgba(191, 87, 0, 0.2); text-align: center; width: 100%;">
+                            Jul 2026
+                        </span>
+                    </div>
+                    <!-- Text content indented precisely -->
+                    <div style="flex: 1; min-width: 250px; line-height: 1.5; color: var(--text-primary); margin-left: 16px;">
                         Our paper <strong style="color: var(--text-link);">SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
                     </div>
                 </div>
                 
                 <!-- Entry 2 -->
-                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px;">
-                    <span style="font-size: 0.85em; font-weight: 700; color: #ffffff !important; background-color: var(--text-secondary); padding: 4px 10px; border-radius: 6px; white-space: nowrap;">
-                        May 2026
-                    </span>
-                    <div style="flex: 1; min-width: 250px; line-height: 1.5; color: var(--text-primary);">
+                <div style="display: flex; flex-wrap: wrap; align-items: flex-start;">
+                    <!-- Matching fixed width container -->
+                    <div style="flex-shrink: 0; width: 85px; display: flex;">
+                        <span style="font-size: 0.85em; font-weight: 700; color: #ffffff !important; background-color: var(--text-secondary); padding: 4px 10px; border-radius: 6px; white-space: nowrap; text-align: center; width: 100%;">
+                            May 2026
+                        </span>
+                    </div>
+                    <!-- Matching indentation -->
+                    <div style="flex: 1; min-width: 250px; line-height: 1.5; color: var(--text-primary); margin-left: 16px;">
                         Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>.
                     </div>
                 </div>
