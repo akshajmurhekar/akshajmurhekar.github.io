@@ -113,25 +113,36 @@ title: Academic Portfolio
     </div>
 </div>
 
-<!-- BEAUTIFIED NEWS FLASH CARD BLOCK WITH ROTATING GRADIENT BORDER -->
+<!-- BEAUTIFIED NEWS TIMELINE CARD WITH ROTATING GRADIENT BORDER -->
 <div class="news-shadow-container" style="margin-top: 40px; margin-bottom: 45px;">
     <div class="news-card-wrapper" style="margin: 0;">
         <div class="news-card-content">
-            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 16px;">
-                <span class="news-badge">News</span>
+            <!-- Header section with subtle icon -->
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+                <span class="news-badge">News & Updates</span>
             </div>
-            <ul style="list-style-type: none; padding-left: 0; margin: 0; line-height: 1.6;">
+            
+            <div style="display: flex; flex-direction: column; gap: 16px;">
                 <!-- Entry 1 -->
-                <li style="margin-bottom: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
-                    <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">July 2026:</span>
-                    <span>Our paper <strong>SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹</span>
-                </li>
+                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px; padding-bottom: 14px; border-bottom: 1px dashed var(--border-subtle);">
+                    <span style="font-size: 0.85em; font-weight: 700; color: #ffffff !important; background-color: #BF5700; padding: 4px 10px; border-radius: 6px; white-space: nowrap; box-shadow: 0 2px 4px rgba(191, 87, 0, 0.2);">
+                        Jul 2026
+                    </span>
+                    <div style="flex: 1; min-width: 250px; line-height: 1.5; color: var(--text-primary);">
+                        Our paper <strong style="color: var(--text-link);">SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
+                    </div>
+                </div>
+                
                 <!-- Entry 2 -->
-                <li style="margin-bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px; color: #24292f;">
-                    <span style="font-weight: 700; color: #BF5700; white-space: nowrap;">May 2026:</span>
-                    <span>Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>.</span>
-                </li>
-            </ul>
+                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 16px;">
+                    <span style="font-size: 0.85em; font-weight: 700; color: #ffffff !important; background-color: var(--text-secondary); padding: 4px 10px; border-radius: 6px; white-space: nowrap;">
+                        May 2026
+                    </span>
+                    <div style="flex: 1; min-width: 250px; line-height: 1.5; color: var(--text-primary);">
+                        Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>.
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -804,6 +815,20 @@ title: Academic Portfolio
         mix-blend-mode: screen;
         /* Optional: turns dark vectors white/silver so they are visible on dark background */
         filter: invert(0.9) hue-rotate(180deg); 
+    }
+
+    /* Smooth interaction style for the news card container */
+    .news-shadow-container {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .news-shadow-container:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    [data-theme="dark"] .news-shadow-container:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     }
 </style>
 
