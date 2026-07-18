@@ -99,8 +99,11 @@ title: Academic Portfolio
 
     <!-- Right Column: Bio Paragraph & Research Interests -->
     <div style="flex: 1; min-width: 280px; line-height: 1.6;">
-        <p style="margin: 0; margin-bottom: 24px; color: #24292f; text-align: justify;">
-            I am a graduate researcher at UT Austin with a focus on language modeling, representation learning, and multimodal deep learning. During my time as an M.S. student, I worked with <a href="https://abhijitmishra.github.io/" target="_blank">Dr. Abhijit Mishra</a> on challenging problems at the intersection of language models and neural signal processing. My research focused on leveraging in-context learning capabilities of Large Language Models (LLMs). Specifically, I developed privacy-preserving neuro-symbolic decoding pipelines and efficient retrieval frameworks designed to bridge the gap between brain activity and text, translating electroencephalography (EEG) signals directly into natural language.
+        <p style="margin: 0; margin-bottom: 24px; color: var(--text-primary); text-align: justify;">
+            I am a graduate researcher at UT Austin with broad interests in <strong>Natural Language Processing</strong>, focusing specifically on <strong>Grounded Language Modeling</strong> to build robust architectures that tie textual generation to real-world modalities and constraints. During my time as an M.S. student, I worked with <a href="https://abhijitmishra.github.io/" target="_blank">Dr. Abhijit Mishra</a> at the intersection of language models and neural signal processing. My research targeted the in-context learning capabilities of Large Language Models (LLMs)—specifically developing privacy-preserving neuro-symbolic decoding pipelines and efficient retrieval frameworks to bridge the gap between brain activity (EEG) and text. 
+        </p>
+        <p style="margin: 0; margin-bottom: 24px; color: var(--text-primary); text-align: justify;">
+            I am always eager to collaborate, share ideas, or simply chat about the future of AI and NLP. Whether you have a research question or just want to connect, please feel free to reach out!
         </p>
 
         <h3 style="font-size: 1.15em; font-weight: 600; color: var(--text-primary); margin-bottom: 10px;">Research Interests</h3>
