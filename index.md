@@ -117,36 +117,28 @@ title: Academic Portfolio
 <div class="news-shadow-container" style="margin-top: 40px; margin-bottom: 45px;">
     <div class="news-card-wrapper" style="margin: 0;">
         <div class="news-card-content">
-            <!-- Header section with subtle icon -->
-            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
-                <span class="news-badge">News & Updates</span>
-            </div>
+            <!-- Header section: Clean text, no pill background -->
+            <h3 style="font-size: 1.15em; font-weight: 700; color: var(--text-primary); margin: 0 0 20px 0; text-transform: uppercase; letter-spacing: 0.5px;">
+                News & Updates
+            </h3>
             
-            <div style="display: flex; flex-direction: column; gap: 16px;">
+            <div class="news-timeline-list">
                 <!-- Entry 1 -->
-                <div style="display: flex; flex-wrap: wrap; align-items: flex-start; padding-bottom: 14px; border-bottom: 1px dashed var(--border-subtle);">
-                    <!-- Fixed width container ensuring perfect vertical alignment -->
-                    <div style="flex-shrink: 0; width: 85px; display: flex;">
-                        <span style="font-size: 0.85em; font-weight: 700; color: #ffffff !important; background-color: #BF5700; padding: 4px 10px; border-radius: 6px; white-space: nowrap; box-shadow: 0 2px 4px rgba(191, 87, 0, 0.2); text-align: center; width: 100%;">
-                            Jul 2026
-                        </span>
+                <div class="news-timeline-item border-bottom-dashed">
+                    <div class="news-date-wrapper">
+                        <span class="news-date-pill pill-orange">Jul 2026</span>
                     </div>
-                    <!-- Text content indented precisely -->
-                    <div style="flex: 1; min-width: 250px; line-height: 1.5; color: var(--text-primary); margin-left: 16px;">
+                    <div class="news-text-content">
                         Our paper <strong style="color: var(--text-link);">SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
                     </div>
                 </div>
                 
                 <!-- Entry 2 -->
-                <div style="display: flex; flex-wrap: wrap; align-items: flex-start;">
-                    <!-- Matching fixed width container -->
-                    <div style="flex-shrink: 0; width: 85px; display: flex;">
-                        <span style="font-size: 0.85em; font-weight: 700; color: #ffffff !important; background-color: var(--text-secondary); padding: 4px 10px; border-radius: 6px; white-space: nowrap; text-align: center; width: 100%;">
-                            May 2026
-                        </span>
+                <div class="news-timeline-item">
+                    <div class="news-date-wrapper">
+                        <span class="news-date-pill pill-gray">May 2026</span>
                     </div>
-                    <!-- Matching indentation -->
-                    <div style="flex: 1; min-width: 250px; line-height: 1.5; color: var(--text-primary); margin-left: 16px;">
+                    <div class="news-text-content">
                         Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>.
                     </div>
                 </div>
@@ -580,7 +572,7 @@ title: Academic Portfolio
         align-items: center;
         margin-left: auto; /* Pushes links to the right side next to controls */
     }
-    
+
     .nav-controls {
         display: flex;
         align-items: center;
@@ -840,6 +832,96 @@ title: Academic Portfolio
 
     [data-theme="dark"] .news-shadow-container:hover {
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Container Layouts */
+    .news-timeline-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .news-timeline-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .border-bottom-dashed {
+        padding-bottom: 16px;
+        border-bottom: 1px dashed var(--border-subtle);
+    }
+
+    /* Date Pill Box Alignment */
+    .news-date-wrapper {
+        flex-shrink: 0;
+        width: 85px;
+        display: flex;
+    }
+
+    .news-date-pill {
+        font-size: 0.85em;
+        font-weight: 700;
+        color: #ffffff !important;
+        padding: 4px 10px;
+        border-radius: 6px;
+        white-space: nowrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .pill-orange {
+        background-color: #BF5700;
+        box-shadow: 0 2px 4px rgba(191, 87, 0, 0.2);
+    }
+
+    .pill-gray {
+        background-color: var(--text-secondary);
+    }
+
+    [data-theme="dark"] .pill-gray {
+        background-color: var(--bg-tag);
+        color: var(--text-primary) !important;
+        border: 1px solid var(--border-tag);
+    }
+
+    /* Text Positioning */
+    .news-text-content {
+        flex: 1;
+        line-height: 1.5;
+        color: var(--text-primary);
+        margin-left: 16px;
+    }
+
+    /* Interaction Effects */
+    .news-shadow-container {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .news-shadow-container:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    [data-theme="dark"] .news-shadow-container:hover {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    /* ===== MOBILE RESPONSIVE LAYOUT ===== */
+    @media screen and (max-width: 768px) {
+        .news-timeline-item {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px; /* Clean gap between pill and text underneath */
+        }
+        
+        .news-date-wrapper {
+            width: auto; /* Drops fixed width layout constraints */
+        }
+        
+        .news-text-content {
+            margin-left: 0; /* Aligns text flush left with the pill element */
+        }
     }
 </style>
 
