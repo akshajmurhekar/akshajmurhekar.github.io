@@ -776,6 +776,17 @@ title: Academic Portfolio
     [data-theme="dark"] img[src*="headshot"] {
         filter: brightness(0.95) contrast(1.05);
     }
+
+    /* Fix white background blocks around SVGs in education section */
+    img[src*=".svg"] {
+        mix-blend-mode: multiply;
+    }
+
+    [data-theme="dark"] img[src*=".svg"] {
+        mix-blend-mode: screen;
+        /* Optional: turns dark vectors white/silver so they are visible on dark background */
+        filter: invert(0.9) hue-rotate(180deg); 
+    }
 </style>
 
 <script>
