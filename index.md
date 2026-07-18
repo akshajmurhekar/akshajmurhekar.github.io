@@ -558,7 +558,6 @@ title: Academic Portfolio
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
         background-color: var(--bg-glass);
         -webkit-backdrop-filter: blur(12px);
         backdrop-filter: blur(12px);
@@ -575,15 +574,19 @@ title: Academic Portfolio
         letter-spacing: -0.3px;
     }
 
+    /* Desktop alignment overrides */
     .nav-links {
         display: flex;
         align-items: center;
+        margin-left: auto; /* Pushes links to the right side next to controls */
     }
-
+    
     .nav-controls {
         display: flex;
         align-items: center;
         gap: 15px;
+        order: 3; /* Ensures it stays at the end of the flex layout */
+        margin-left: 20px;
     }
 
     .nav-links a {
