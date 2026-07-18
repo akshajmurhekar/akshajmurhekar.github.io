@@ -17,7 +17,7 @@ title: Academic Portfolio
 <!-- STICKY HOVERING FLOATING GLASS NAV BAR WITH MOBILE DROP DOWN -->
 <div class="sticky-nav">
     <div class="nav-name">Akshaj Murhekar</div>
-    
+
     <!-- Hidden Checkbox & Hamburger Label for Mobile Toggle -->
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <label for="nav-toggle" class="nav-toggle-label">
@@ -33,6 +33,23 @@ title: Academic Portfolio
         <a href="#projects">Projects</a>
         <a href="#awards">Awards</a>
         <a href="#ta">TA & Mentoring</a>
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle theme">
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
     </div>
 </div>
 
@@ -379,6 +396,75 @@ title: Academic Portfolio
 </div>
 
 <style>
+    /* ===== CSS VARIABLES FOR LIGHT MODE (DEFAULT) ===== */
+    :root {
+        --bg-primary: #ffffff;
+        --bg-secondary: #f6f8fa;
+        --bg-glass: rgba(255, 255, 255, 0.8);
+        --bg-glass-border: rgba(225, 228, 232, 0.6);
+        --bg-glass-shadow: rgba(0, 0, 0, 0.05);
+        --bg-news-card: #ffffff;
+        --bg-badge: #BF5700;
+        --bg-tag: #f1f2f4;
+        --text-primary: #24292f;
+        --text-secondary: #57606a;
+        --text-link: #0366d6;
+        --text-link-hover: #0550ae;
+        --accent-orange: #BF5700;
+        --accent-blue: #0366d6;
+        --border-subtle: rgba(225, 228, 232, 0.4);
+        --border-tag: #e1e4e8;
+        --shadow-news: rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.08);
+        --shadow-glass: 0 4px 20px rgba(0, 0, 0, 0.05);
+        --icon-filter: invert(38%) sepia(8%) saturate(638%) hue-rotate(173deg) brightness(93%) contrast(89%);
+        --icon-filter-hover: invert(31%) sepia(89%) saturate(2304%) hue-rotate(204deg) brightness(91%) contrast(98%);
+        --gradient-1: #BF5700;
+        --gradient-2: #0366d6;
+        --gradient-3: #ff8f3d;
+        --transition-speed: 0.3s;
+    }
+
+    /* ===== DARK MODE VARIABLES ===== */
+    [data-theme="dark"] {
+        --bg-primary: #0d1117;
+        --bg-secondary: #161b22;
+        --bg-glass: rgba(22, 27, 34, 0.85);
+        --bg-glass-border: rgba(48, 54, 61, 0.6);
+        --bg-glass-shadow: rgba(0, 0, 0, 0.3);
+        --bg-news-card: #161b22;
+        --bg-badge: #ff8f3d;
+        --bg-tag: #21262d;
+        --text-primary: #e6edf3;
+        --text-secondary: #8b949e;
+        --text-link: #58a6ff;
+        --text-link-hover: #79c0ff;
+        --accent-orange: #ff8f3d;
+        --accent-blue: #58a6ff;
+        --border-subtle: rgba(48, 54, 61, 0.4);
+        --border-tag: #30363d;
+        --shadow-news: rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5);
+        --shadow-glass: 0 4px 20px rgba(0, 0, 0, 0.4);
+        --icon-filter: invert(84%) sepia(10%) saturate(0%) hue-rotate(180deg) brightness(95%) contrast(90%);
+        --icon-filter-hover: invert(60%) sepia(50%) saturate(500%) hue-rotate(190deg) brightness(110%) contrast(100%);
+        --gradient-1: #ff8f3d;
+        --gradient-2: #58a6ff;
+        --gradient-3: #BF5700;
+    }
+
+    /* ===== THEME TRANSITION ===== */
+    body,
+    .sticky-nav,
+    .news-card-content,
+    .news-shadow-container,
+    body > *,
+    body p, body li, body div, body span, body a, body h1, body h2, body h3 {
+        transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    }
+
+    body {
+        background-color: var(--bg-primary);
+    }
+
     .site-footer {
         display: flex;
         flex-wrap: wrap;
@@ -441,25 +527,25 @@ title: Academic Portfolio
     .sticky-nav {
         position: -webkit-sticky;
         position: sticky;
-        top: 15px; 
+        top: 15px;
         z-index: 1000;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap; 
-        background-color: rgba(255, 255, 255, 0.8); 
+        flex-wrap: wrap;
+        background-color: var(--bg-glass);
         -webkit-backdrop-filter: blur(12px);
-        backdrop-filter: blur(12px); 
+        backdrop-filter: blur(12px);
         padding: 12px 24px;
-        border: 1px solid rgba(225, 228, 232, 0.6); 
-        border-radius: 12px; 
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); 
+        border: 1px solid var(--bg-glass-border);
+        border-radius: 12px;
+        box-shadow: var(--shadow-glass);
     }
 
     .nav-name {
         font-size: 1.25em;
         font-weight: 700;
-        color: #24292f !important;
+        color: var(--text-primary) !important;
         letter-spacing: -0.3px;
     }
 
@@ -472,19 +558,19 @@ title: Academic Portfolio
         margin-left: 20px;
         font-size: 0.93em;
         font-weight: 600;
-        color: #57606a !important;
+        color: var(--text-secondary) !important;
         text-decoration: none !important;
-        transition: all 0.2s ease-in-out;
+        transition: color 0.2s ease-in-out;
     }
 
     .nav-links a:hover {
-        color: #0366d6 !important;
+        color: var(--text-link) !important;
     }
 
     .nav-toggle {
         display: none;
     }
-    
+
     .nav-toggle-label {
         display: none;
         cursor: pointer;
@@ -498,9 +584,53 @@ title: Academic Portfolio
         display: block;
         height: 2px;
         width: 100%;
-        background-color: #24292f;
+        background-color: var(--text-primary);
         border-radius: 2px;
         transition: all 0.2s ease-in-out;
+    }
+
+    /* ===== THEME TOGGLE BUTTON ===== */
+    .theme-toggle {
+        margin-left: 20px;
+        background: var(--bg-tag);
+        border: 1px solid var(--border-tag);
+        border-radius: 8px;
+        padding: 6px 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease-in-out;
+        color: var(--text-secondary);
+    }
+
+    .theme-toggle:hover {
+        background: var(--bg-secondary);
+        border-color: var(--text-secondary);
+        color: var(--text-primary);
+        transform: scale(1.05);
+    }
+
+    .theme-toggle svg {
+        width: 18px;
+        height: 18px;
+        transition: all var(--transition-speed) ease;
+    }
+
+    .sun-icon {
+        display: block;
+    }
+
+    .moon-icon {
+        display: none;
+    }
+
+    [data-theme="dark"] .sun-icon {
+        display: none;
+    }
+
+    [data-theme="dark"] .moon-icon {
+        display: block;
     }
 
     @media screen and (max-width: 768px) {
@@ -535,16 +665,17 @@ title: Academic Portfolio
         }
     }
 
-    body, p, li, div {
-        color: #24292f !important;
+    body, p, li, div, span {
+        color: var(--text-primary) !important;
     }
-    
+
     p a, li a, div a:not([style*="background-color"]) {
-        color: #0366d6 !important;
+        color: var(--text-link) !important;
         text-decoration: none !important;
     }
     p a:hover, li a:hover, div a:hover {
         text-decoration: underline !important;
+        color: var(--text-link-hover) !important;
     }
     div a.profile-icon-link:hover {
         color: transparent !important;
@@ -563,9 +694,7 @@ title: Academic Portfolio
     .news-shadow-container {
         position: relative;
         border-radius: 12px;
-        box-shadow: 
-            0 4px 12px rgba(0, 0, 0, 0.04), 
-            0 12px 30px rgba(0, 0, 0, 0.08);
+        box-shadow: var(--shadow-news);
     }
 
     /* Inner layout container with animated gradient border */
@@ -576,10 +705,10 @@ title: Academic Portfolio
         /* Dynamically updates the gradient angle based on the CSS variable */
         background: conic-gradient(
             from var(--gradient-angle),
-            #BF5700 0deg,
-            #0366d6 120deg,
-            #ff8f3d 240deg,
-            #BF5700 360deg
+            var(--gradient-1) 0deg,
+            var(--gradient-2) 120deg,
+            var(--gradient-3) 240deg,
+            var(--gradient-1) 360deg
         );
         animation: spin-gradient-clean 6s linear infinite;
     }
@@ -587,7 +716,7 @@ title: Academic Portfolio
     .news-card-content {
         position: relative;
         z-index: 1;
-        background: #ffffff; 
+        background: var(--bg-news-card);
         border-radius: 11px;
         padding: 20px 24px;
     }
@@ -595,7 +724,7 @@ title: Academic Portfolio
     .news-badge {
         display: inline-block;
         padding: 3px 10px;
-        background-color: #BF5700;
+        background-color: var(--bg-badge);
         color: #ffffff !important;
         font-weight: 700;
         font-size: 0.82em;
@@ -613,4 +742,57 @@ title: Academic Portfolio
             --gradient-angle: 360deg;
         }
     }
+
+    /* ===== INLINE-STYLE OVERRIDES FOR DARK MODE ===== */
+    [data-theme="dark"] .profile-icon {
+        filter: var(--icon-filter) !important;
+    }
+
+    [data-theme="dark"] .profile-icon-link:hover .profile-icon {
+        filter: var(--icon-filter-hover) !important;
+    }
+
+    [data-theme="dark"] .news-badge {
+        color: #0d1117 !important;
+    }
+
+    [data-theme="dark"] hr {
+        border-top-color: var(--border-subtle) !important;
+    }
+
+    /* Tag buttons (arXiv, PDF, Code) */
+    [data-theme="dark"] a[style*="background-color: #f1f2f4"] {
+        background-color: var(--bg-tag) !important;
+        border-color: var(--border-tag) !important;
+    }
+
+    /* UT Logo SVGs */
+    [data-theme="dark"] img[src*="ut-"],
+    [data-theme="dark"] img[src*="longhorn"] {
+        filter: brightness(0.8) contrast(1.2);
+    }
+
+    /* Headshot */
+    [data-theme="dark"] img[src*="headshot"] {
+        filter: brightness(0.95) contrast(1.05);
+    }
 </style>
+
+<script>
+    (function() {
+        // Theme toggle functionality
+        const toggleBtn = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Check for saved preference or default to light
+        const savedTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+
+        toggleBtn.addEventListener('click', function() {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    })();
+</script>
