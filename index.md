@@ -877,7 +877,7 @@ title: Academic Portfolio
     .news-timeline-list::before {
         content: '';
         position: absolute;
-        left: 6px;
+        left: 4px;
         top: 12px;
         bottom: 12px;
         width: 2px;
@@ -885,18 +885,17 @@ title: Academic Portfolio
         z-index: 0;
     }
 
-    /* Node dot per entry */
+    /* Node dot per entry (small, sits on the rail) */
     .news-timeline-item::before {
         content: '';
         position: absolute;
         left: 0;
-        top: 5px;
-        width: 14px;
-        height: 14px;
+        top: 7px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         background: var(--bg-news-card);
         border: 2px solid var(--accent-orange);
-        box-shadow: 0 0 0 3px var(--bg-news-card);
         z-index: 1;
     }
 
