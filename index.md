@@ -84,8 +84,8 @@ title: Academic Portfolio
                 <img src="assets/icons/github.svg" alt="GitHub" class="profile-icon">
             </a>
 
-            <!-- Document / CV (Placeholder link) -->
-            <a href="#" onclick="return false;" title="Curriculum Vitae" class="profile-icon-link">
+            <!-- Document / CV -->
+            <a href="assets/Akshaj_Murhekar_CV.pdf" target="_blank" title="Curriculum Vitae" class="profile-icon-link">
                 <img src="assets/icons/cv.svg" alt="CV" class="profile-icon">
             </a>
         </div>
