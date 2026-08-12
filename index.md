@@ -142,11 +142,21 @@ title: Academic Portfolio
                         <span class="news-date-pill pill-gray">Jul 2026</span>
                     </div>
                     <div class="news-text-content">
+                        Received the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: var(--text-link);">ACM SIGCHI Gary Marsden Travel Award</a> to attend <strong>ICMI 2026</strong> ✈️
+                    </div>
+                </div>
+
+                <!-- Entry 3 -->
+                <div class="news-timeline-item border-bottom-dashed">
+                    <div class="news-date-wrapper">
+                        <span class="news-date-pill pill-gray">Jul 2026</span>
+                    </div>
+                    <div class="news-text-content">
                         Our paper <strong style="color: var(--text-link);">SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
                     </div>
                 </div>
                 
-                <!-- Entry 3 -->
+                <!-- Entry 4 -->
                 <div class="news-timeline-item">
                     <div class="news-date-wrapper">
                         <span class="news-date-pill pill-gray">May 2026</span>
