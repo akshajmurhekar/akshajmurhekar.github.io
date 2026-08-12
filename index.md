@@ -129,14 +129,24 @@ title: Academic Portfolio
                 <!-- Entry 1 -->
                 <div class="news-timeline-item border-bottom-dashed">
                     <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-orange">Jul 2026</span>
+                        <span class="news-date-pill pill-orange">Aug 2026</span>
+                    </div>
+                    <div class="news-text-content">
+                        Started as an <strong style="color: var(--text-link);">AI Research Engineer</strong> at <strong>Voila Voice</strong> 🚀
+                    </div>
+                </div>
+
+                <!-- Entry 2 -->
+                <div class="news-timeline-item border-bottom-dashed">
+                    <div class="news-date-wrapper">
+                        <span class="news-date-pill pill-gray">Jul 2026</span>
                     </div>
                     <div class="news-text-content">
                         Our paper <strong style="color: var(--text-link);">SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
                     </div>
                 </div>
                 
-                <!-- Entry 2 -->
+                <!-- Entry 3 -->
                 <div class="news-timeline-item">
                     <div class="news-date-wrapper">
                         <span class="news-date-pill pill-gray">May 2026</span>
@@ -839,15 +849,45 @@ title: Academic Portfolio
 
     /* Container Layouts */
     .news-timeline-list {
+        position: relative;
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
     .news-timeline-item {
+        position: relative;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+        padding-left: 26px; /* room for the rail + node */
+    }
+
+    /* Continuous vertical connector line (stops at first & last node) */
+    .news-timeline-list::before {
+        content: '';
+        position: absolute;
+        left: 6px;
+        top: 12px;
+        bottom: 12px;
+        width: 2px;
+        background: var(--border-subtle);
+        z-index: 0;
+    }
+
+    /* Node dot per entry */
+    .news-timeline-item::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: var(--bg-news-card);
+        border: 2px solid var(--accent-orange);
+        box-shadow: 0 0 0 3px var(--bg-news-card);
+        z-index: 1;
     }
 
     .border-bottom-dashed {
