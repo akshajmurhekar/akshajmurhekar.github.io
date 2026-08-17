@@ -132,17 +132,17 @@ title: Academic Portfolio
                         <span class="news-date-pill pill-orange">Aug 2026</span>
                     </div>
                     <div class="news-text-content">
-                        Started as an <strong style="color: var(--text-link);">AI Research Engineer</strong> at <strong>Voila Voice</strong> 🚀
+                        Our paper <strong style="color: var(--text-link);">SENSE</strong> was selected for an <strong style="color: var(--text-link);">oral presentation</strong> at <strong>ICMI 2026</strong> in Naples, Italy! 🎙️
                     </div>
                 </div>
 
                 <!-- Entry 2 -->
                 <div class="news-timeline-item border-bottom-dashed">
                     <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-gray">Jul 2026</span>
+                        <span class="news-date-pill pill-gray">Aug 2026</span>
                     </div>
                     <div class="news-text-content">
-                        Received the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: var(--text-link);">ACM SIGCHI Gary Marsden Travel Award</a> to attend <strong>ICMI 2026</strong> ✈️
+                        Started as an <strong style="color: var(--text-link);">AI Research Engineer</strong> at <strong>Voila Voice</strong> 🚀
                     </div>
                 </div>
 
@@ -152,11 +152,21 @@ title: Academic Portfolio
                         <span class="news-date-pill pill-gray">Jul 2026</span>
                     </div>
                     <div class="news-text-content">
+                        Received the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: var(--text-link);">ACM SIGCHI Gary Marsden Travel Award</a> to attend <strong>ICMI 2026</strong> ✈️
+                    </div>
+                </div>
+
+                <!-- Entry 4 -->
+                <div class="news-timeline-item border-bottom-dashed">
+                    <div class="news-date-wrapper">
+                        <span class="news-date-pill pill-gray">Jul 2026</span>
+                    </div>
+                    <div class="news-text-content">
                         Our paper <strong style="color: var(--text-link);">SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
                     </div>
                 </div>
                 
-                <!-- Entry 4 -->
+                <!-- Entry 5 -->
                 <div class="news-timeline-item">
                     <div class="news-date-wrapper">
                         <span class="news-date-pill pill-gray">May 2026</span>
@@ -192,10 +202,10 @@ title: Academic Portfolio
     <!-- PUBLICATION 2 -->
     <li style="margin-bottom: 28px; line-height: 1.6; color: #24292f;">
         <div style="font-size: 1.1em; font-weight: 600; color: #24292f; margin-bottom: 4px;">
-            SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
+            🏆 SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
         </div>
         <div style="font-size: 0.95em; color: #24292f; margin-bottom: 8px;">
-            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;">(2026). <em>Under review at ICMI 2026</em>.</span>
+            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;">(2026). <em>Accepted at ICMI 2026</em> — <strong style="color: var(--text-link);">Oral Presentation</strong>, Naples, Italy.</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
             <a href="https://arxiv.org/abs/2603.17109" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">arXiv Abstract</a>
