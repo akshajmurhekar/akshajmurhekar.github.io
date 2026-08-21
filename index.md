@@ -132,7 +132,7 @@ title: Academic Portfolio
                         <span class="news-date-pill pill-orange">Aug 2026</span>
                     </div>
                     <div class="news-text-content">
-                        Our paper <strong style="color: var(--text-link);">SENSE</strong> was selected for an <strong style="color: var(--text-link);">oral presentation</strong> at <strong>ICMI 2026</strong> in Naples, Italy! 🎙️
+                        Our paper <strong style="color: var(--text-link);">SYNAPSE</strong> was <strong style="color: var(--text-link);">accepted to EMNLP 2026 (Findings)</strong> in Budapest! 🎉
                     </div>
                 </div>
 
@@ -142,17 +142,17 @@ title: Academic Portfolio
                         <span class="news-date-pill pill-gray">Aug 2026</span>
                     </div>
                     <div class="news-text-content">
-                        Started as an <strong style="color: var(--text-link);">AI Research Engineer</strong> at <strong>Voila Voice</strong> 🚀
+                        Our paper <strong style="color: var(--text-link);">SENSE</strong> was selected for an <strong style="color: var(--text-link);">oral presentation</strong> at <strong>ICMI 2026</strong> in Naples, Italy! 🎙️
                     </div>
                 </div>
 
                 <!-- Entry 3 -->
                 <div class="news-timeline-item border-bottom-dashed">
                     <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-gray">Jul 2026</span>
+                        <span class="news-date-pill pill-gray">Aug 2026</span>
                     </div>
                     <div class="news-text-content">
-                        Received the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: var(--text-link);">ACM SIGCHI Gary Marsden Travel Award</a> to attend <strong>ICMI 2026</strong> ✈️
+                        Started as an <strong style="color: var(--text-link);">AI Research Engineer</strong> at <strong>Voila Voice</strong> 🚀
                     </div>
                 </div>
 
@@ -162,11 +162,21 @@ title: Academic Portfolio
                         <span class="news-date-pill pill-gray">Jul 2026</span>
                     </div>
                     <div class="news-text-content">
+                        Received the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: var(--text-link);">ACM SIGCHI Gary Marsden Travel Award</a> to attend <strong>ICMI 2026</strong> ✈️
+                    </div>
+                </div>
+
+                <!-- Entry 5 -->
+                <div class="news-timeline-item border-bottom-dashed">
+                    <div class="news-date-wrapper">
+                        <span class="news-date-pill pill-gray">Jul 2026</span>
+                    </div>
+                    <div class="news-text-content">
                         Our paper <strong style="color: var(--text-link);">SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
                     </div>
                 </div>
                 
-                <!-- Entry 5 -->
+                <!-- Entry 6 -->
                 <div class="news-timeline-item">
                     <div class="news-date-wrapper">
                         <span class="news-date-pill pill-gray">May 2026</span>
@@ -190,7 +200,7 @@ title: Academic Portfolio
             SYNAPSE: Neuro-Symbolic Visual Thought-to-Text Decoding via Topological Semantic Denoising
         </div>
         <div style="font-size: 0.95em; color: #24292f; margin-bottom: 8px;">
-            <strong>A. Murhekar</strong>, A. Mishra. <span style="color: #57606a;">(2026). <em>Under review at EMNLP 2026</em>.</span>
+            <strong>A. Murhekar</strong>, A. Mishra. <span style="color: #57606a;">(2026). <em>EMNLP 2026 (Findings)</em>.</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
             <a href="https://arxiv.org/abs/2605.27790" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">arXiv Abstract</a>
