@@ -127,63 +127,51 @@ title: Academic Portfolio
             
             <div class="news-timeline-list">
                 <!-- Entry 1 -->
-                <div class="news-timeline-item border-bottom-dashed">
-                    <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-orange">Aug 2026</span>
-                    </div>
-                    <div class="news-text-content">
-                        Our paper <strong style="color: var(--text-link);">SYNAPSE</strong> was <strong style="color: var(--text-link);">accepted to EMNLP 2026 (Findings)</strong> in Budapest! 🎉
-                    </div>
+                <div class="compact-news-row">
+                    <span class="news-date-pill pill-orange">Aug 2026</span>
+                    <span class="news-row-text">
+                        <strong style="color: var(--text-link);">SYNAPSE</strong> was <strong style="color: var(--text-link);">accepted to EMNLP 2026 (Findings)</strong> in Budapest! 🚀
+                    </span>
                 </div>
 
                 <!-- Entry 2 -->
-                <div class="news-timeline-item border-bottom-dashed">
-                    <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-gray">Aug 2026</span>
-                    </div>
-                    <div class="news-text-content">
-                        Our paper <strong style="color: var(--text-link);">SENSE</strong> was selected for an <strong style="color: var(--text-link);">oral presentation</strong> at <strong>ICMI 2026</strong> in Naples, Italy! 🎙️
-                    </div>
+                <div class="compact-news-row">
+                    <span class="news-date-pill pill-gray">Aug 2026</span>
+                    <span class="news-row-text">
+                        <strong style="color: var(--text-link);">SENSE</strong> was selected for an <strong style="color: var(--text-link);">oral presentation</strong> at <strong>ICMI 2026</strong> in Naples, Italy! 🎙️
+                    </span>
                 </div>
 
                 <!-- Entry 3 -->
-                <div class="news-timeline-item border-bottom-dashed">
-                    <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-gray">Aug 2026</span>
-                    </div>
-                    <div class="news-text-content">
+                <div class="compact-news-row">
+                    <span class="news-date-pill pill-gray">Aug 2026</span>
+                    <span class="news-row-text">
                         Started as an <strong style="color: var(--text-link);">AI Research Engineer</strong> at <strong>Voila Voice</strong> 🚀
-                    </div>
+                    </span>
                 </div>
 
                 <!-- Entry 4 -->
-                <div class="news-timeline-item border-bottom-dashed">
-                    <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-gray">Jul 2026</span>
-                    </div>
-                    <div class="news-text-content">
+                <div class="compact-news-row">
+                    <span class="news-date-pill pill-gray">Jul 2026</span>
+                    <span class="news-row-text">
                         Received the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: var(--text-link);">ACM SIGCHI Gary Marsden Travel Award</a> to attend <strong>ICMI 2026</strong> ✈️
-                    </div>
+                    </span>
                 </div>
 
                 <!-- Entry 5 -->
-                <div class="news-timeline-item border-bottom-dashed">
-                    <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-gray">Jul 2026</span>
-                    </div>
-                    <div class="news-text-content">
-                        Our paper <strong style="color: var(--text-link);">SENSE</strong> was officially accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
-                    </div>
+                <div class="compact-news-row">
+                    <span class="news-date-pill pill-gray">Jul 2026</span>
+                    <span class="news-row-text">
+                        <strong style="color: var(--text-link);">SENSE</strong> was accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
+                    </span>
                 </div>
-                
+
                 <!-- Entry 6 -->
-                <div class="news-timeline-item">
-                    <div class="news-date-wrapper">
-                        <span class="news-date-pill pill-gray">May 2026</span>
-                    </div>
-                    <div class="news-text-content">
+                <div class="compact-news-row">
+                    <span class="news-date-pill pill-gray">May 2026</span>
+                    <span class="news-row-text">
                         Graduated with an M.S. in Information Science from <strong>The University of Texas at Austin</strong>.
-                    </div>
+                    </span>
                 </div>
             </div>
         </div>
@@ -877,69 +865,40 @@ title: Academic Portfolio
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     }
 
-    /* Container Layouts */
+    /* ===== COMPACT NEWS ROWS ===== */
     .news-timeline-list {
-        position: relative;
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 1px;
     }
 
-    .news-timeline-item {
-        position: relative;
+    /* Single-line row: date pill + text on one line */
+    .compact-news-row {
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        padding-left: 26px; /* room for the rail + node */
-    }
-
-    /* Continuous vertical connector line (stops at first & last node) */
-    .news-timeline-list::before {
-        content: '';
-        position: absolute;
-        left: 4px;
-        top: 12px;
-        bottom: 12px;
-        width: 2px;
-        background: var(--border-subtle);
-        z-index: 0;
-    }
-
-    /* Node dot per entry (small, sits on the rail) */
-    .news-timeline-item::before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: 7px;
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        background: var(--bg-news-card);
-        border: 2px solid var(--accent-orange);
-        z-index: 1;
-    }
-
-    .border-bottom-dashed {
-        padding-bottom: 16px;
+        align-items: center;
+        gap: 12px;
+        padding: 9px 0;
         border-bottom: 1px dashed var(--border-subtle);
+        font-size: 0.94em;
+        line-height: 1.4;
+        color: var(--text-primary);
     }
 
-    /* Date Pill Box Alignment */
-    .news-date-wrapper {
-        flex-shrink: 0;
-        width: 85px;
-        display: flex;
+    .compact-news-row:last-child {
+        border-bottom: none;
+        padding-bottom: 2px;
     }
 
+    /* Date pill */
     .news-date-pill {
-        font-size: 0.85em;
+        flex-shrink: 0;
+        font-size: 0.8em;
         font-weight: 700;
         color: #ffffff !important;
-        padding: 4px 10px;
+        padding: 3px 9px;
         border-radius: 6px;
         white-space: nowrap;
-        text-align: center;
-        width: 100%;
+        font-variant-numeric: tabular-nums;
     }
 
     .pill-orange {
@@ -957,42 +916,18 @@ title: Academic Portfolio
         border: 1px solid var(--border-tag);
     }
 
-    /* Text Positioning */
-    .news-text-content {
+    /* Row text */
+    .news-row-text {
         flex: 1;
-        line-height: 1.5;
+        min-width: 0;
+        line-height: 1.45;
         color: var(--text-primary);
-        margin-left: 16px;
-    }
-
-    /* Interaction Effects */
-    .news-shadow-container {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .news-shadow-container:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    }
-
-    [data-theme="dark"] .news-shadow-container:hover {
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
     }
 
     /* ===== MOBILE RESPONSIVE LAYOUT ===== */
     @media screen and (max-width: 768px) {
-        .news-timeline-item {
-            flex-direction: column;
+        .compact-news-row {
             align-items: flex-start;
-            gap: 8px; /* Clean gap between pill and text underneath */
-        }
-        
-        .news-date-wrapper {
-            width: auto; /* Drops fixed width layout constraints */
-        }
-        
-        .news-text-content {
-            margin-left: 0; /* Aligns text flush left with the pill element */
         }
     }
 </style>
