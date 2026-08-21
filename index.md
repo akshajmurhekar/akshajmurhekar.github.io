@@ -200,7 +200,7 @@ title: Academic Portfolio
             SYNAPSE: Neuro-Symbolic Visual Thought-to-Text Decoding via Topological Semantic Denoising
         </div>
         <div style="font-size: 0.95em; color: #24292f; margin-bottom: 8px;">
-            <strong>A. Murhekar</strong>, A. Mishra. <span style="color: #57606a;">(2026). <em>EMNLP 2026 (Findings)</em>.</span>
+            <strong>A. Murhekar</strong>, A. Mishra. <span style="color: #57606a;"><em>EMNLP 2026 (Findings)</em>.</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
             <a href="https://arxiv.org/abs/2605.27790" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">arXiv Abstract</a>
@@ -215,7 +215,7 @@ title: Academic Portfolio
             🏆 SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
         </div>
         <div style="font-size: 0.95em; color: #24292f; margin-bottom: 8px;">
-            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;">(2026). <em>Accepted at ICMI 2026</em> — <strong style="color: var(--text-link);">Oral Presentation</strong>, Naples, Italy.</span>
+            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;"><em>ICMI 2026 (Oral, Naples, Italy)</em>.</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
             <a href="https://arxiv.org/abs/2603.17109" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">arXiv Abstract</a>
