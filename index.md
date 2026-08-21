@@ -130,7 +130,7 @@ title: Academic Portfolio
                 <div class="compact-news-row">
                     <span class="news-date-pill pill-orange">Aug 2026</span>
                     <span class="news-row-text">
-                        <strong style="color: var(--text-link);">SYNAPSE</strong> was <strong style="color: var(--text-link);">accepted to EMNLP 2026 (Findings)</strong> in Budapest! 🚀
+                        <strong style="color: var(--text-link);">SYNAPSE</strong> was <strong style="color: var(--text-link);">accepted to EMNLP 2026 (Findings)</strong> in Budapest, Hungary 🚀
                     </span>
                 </div>
 
@@ -162,7 +162,7 @@ title: Academic Portfolio
                 <div class="compact-news-row">
                     <span class="news-date-pill pill-gray">Jul 2026</span>
                     <span class="news-row-text">
-                        <strong style="color: var(--text-link);">SENSE</strong> was accepted to <strong>ICMI 2026</strong> @ Naples, Italy! 🇮🇹
+                        <strong style="color: var(--text-link);">SENSE</strong> was accepted to <strong>ICMI 2026</strong> in Naples, Italy 🇮🇹
                     </span>
                 </div>
 
