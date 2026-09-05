@@ -200,7 +200,7 @@ title: Academic Portfolio
     <!-- PUBLICATION 2 -->
     <li style="margin-bottom: 28px; line-height: 1.6; color: #24292f;">
         <div style="font-size: 1.1em; font-weight: 600; color: #24292f; margin-bottom: 4px;">
-            🏆 SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
+            SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
         </div>
         <div style="font-size: 0.95em; color: #24292f; margin-bottom: 8px;">
             <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;"><em>ICMI 2026 (Oral Presentation)</em>.</span>
