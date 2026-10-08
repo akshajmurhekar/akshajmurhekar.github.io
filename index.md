@@ -128,17 +128,17 @@ title: Academic Portfolio
             <div class="news-timeline-list">
                 <!-- Entry 1 -->
                 <div class="compact-news-row">
-                    <span class="news-date-pill pill-orange">Aug 2026</span>
+                    <span class="news-date-pill pill-gold">Oct 2026</span>
                     <span class="news-row-text">
-                        <strong style="color: var(--text-link);">SYNAPSE</strong> was <strong style="color: var(--text-link);">accepted to EMNLP 2026 (Findings)</strong> in Budapest, Hungary 🚀
+                        <strong style="color: var(--text-link);">SENSE</strong> received the <strong style="color: var(--text-link);">Best Student Paper Runner-Up Award</strong> at <strong>ICMI 2026</strong> in Naples, Italy 🏆
                     </span>
                 </div>
 
                 <!-- Entry 2 -->
                 <div class="compact-news-row">
-                    <span class="news-date-pill pill-gray">Aug 2026</span>
+                    <span class="news-date-pill pill-orange">Aug 2026</span>
                     <span class="news-row-text">
-                        <strong style="color: var(--text-link);">SENSE</strong> was selected for an <strong style="color: var(--text-link);">oral presentation</strong> at <strong>ICMI 2026</strong> in Naples, Italy! 🎙️
+                        <strong style="color: var(--text-link);">SYNAPSE</strong> was <strong style="color: var(--text-link);">accepted to EMNLP 2026 (Findings)</strong> in Budapest, Hungary 🚀
                     </span>
                 </div>
 
@@ -146,15 +146,15 @@ title: Academic Portfolio
                 <div class="compact-news-row">
                     <span class="news-date-pill pill-gray">Aug 2026</span>
                     <span class="news-row-text">
-                        Started as an <strong style="color: var(--text-link);">AI Research Engineer</strong> at <strong>Voila Voice</strong> 🚀
+                        <strong style="color: var(--text-link);">SENSE</strong> was accepted to <strong>ICMI 2026</strong> in Naples, Italy as an <strong style="color: var(--text-link);">oral presentation</strong> 🎙️
                     </span>
                 </div>
 
                 <!-- Entry 4 -->
                 <div class="compact-news-row">
-                    <span class="news-date-pill pill-gray">Jul 2026</span>
+                    <span class="news-date-pill pill-gray">Aug 2026</span>
                     <span class="news-row-text">
-                        Received the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: var(--text-link);">ACM SIGCHI Gary Marsden Travel Award</a> to attend <strong>ICMI 2026</strong> ✈️
+                        Started as an <strong style="color: var(--text-link);">AI Research Engineer</strong> at <strong>Voila Voice</strong> 🚀
                     </span>
                 </div>
 
@@ -162,7 +162,7 @@ title: Academic Portfolio
                 <div class="compact-news-row">
                     <span class="news-date-pill pill-gray">Jul 2026</span>
                     <span class="news-row-text">
-                        <strong style="color: var(--text-link);">SENSE</strong> was accepted to <strong>ICMI 2026</strong> in Naples, Italy 🇮🇹
+                        Received the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: var(--text-link);">ACM SIGCHI Gary Marsden Travel Award</a> to attend <strong>ICMI 2026</strong> ✈️
                     </span>
                 </div>
 
@@ -203,7 +203,7 @@ title: Academic Portfolio
             SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
         </div>
         <div style="font-size: 0.95em; color: #24292f; margin-bottom: 8px;">
-            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;"><em>ICMI 2026 (Oral Presentation)</em>.</span>
+            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;"><em>ICMI 2026 (Oral Presentation) &middot; Best Student Paper Runner-Up</em>.</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
             <a href="https://arxiv.org/abs/2603.17109" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">arXiv Abstract</a>
@@ -908,6 +908,16 @@ title: Academic Portfolio
 
     .pill-gray {
         background-color: var(--text-secondary);
+    }
+
+    .pill-gold {
+        background-color: #b8860b;
+        box-shadow: 0 2px 4px rgba(218, 165, 32, 0.3);
+    }
+
+    [data-theme="dark"] .pill-gold {
+        background-color: #d4af37;
+        color: #0d1117 !important;
     }
 
     [data-theme="dark"] .pill-gray {
