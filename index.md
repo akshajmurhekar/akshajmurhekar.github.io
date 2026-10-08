@@ -314,7 +314,7 @@ title: Academic Portfolio
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">Jul 2026</span>
         </div>
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            Awarded by ACM SIGCHI to support attendance and the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: #0366d6; text-decoration: none; font-weight: 500;">presentation of my work</a> at ICMI 2026.
+            <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: #0366d6; text-decoration: none; font-weight: 500;">Awarded by ACM SIGCHI</a> to support attendance and the presentation of my work at ICMI 2026.
         </div>
     </li>
 
