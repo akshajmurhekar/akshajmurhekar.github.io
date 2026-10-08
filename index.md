@@ -299,6 +299,28 @@ title: Academic Portfolio
     <!-- Award 1 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
+            <span><strong>Best Student Paper Runner-Up</strong> &middot; ACM ICMI 2026</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">Oct 2026</span>
+        </div>
+        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
+            Awarded for <em>SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval</em>, presented at ICMI 2026 in Naples, Italy.
+        </div>
+    </li>
+
+    <!-- Award 2 -->
+    <li style="margin-bottom: 16px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
+            <span><strong>ACM SIGCHI Gary Marsden Travel Award</strong> &middot; ICMI 2026</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">Jul 2026</span>
+        </div>
+        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
+            Awarded by ACM SIGCHI to support attendance and the <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: #0366d6; text-decoration: none; font-weight: 500;">presentation of my work</a> at ICMI 2026.
+        </div>
+    </li>
+
+    <!-- Award 3 -->
+    <li style="margin-bottom: 16px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Presidential Scholarship ($108,000)</strong> &middot; UT Arlington</span>
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2020 &ndash; 2024</span>
         </div>
@@ -307,7 +329,7 @@ title: Academic Portfolio
         </div>
     </li>
     
-    <!-- Award 2 -->
+    <!-- Award 4 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>NSF REU Research Awards (2x Recipient)</strong> &middot; National Science Foundation</span>
@@ -322,7 +344,7 @@ title: Academic Portfolio
         </div>
     </li>
 
-    <!-- Award 3 -->
+    <!-- Award 5 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>NIH Institutional Research Grant Funding</strong> &middot; National Institutes of Health</span>
@@ -333,7 +355,7 @@ title: Academic Portfolio
         </div>
     </li>
 
-    <!-- Award 4 -->
+    <!-- Award 6 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Undergraduate Research Excellence (Rank 3)</strong> &middot; College of Engineering</span>
@@ -344,7 +366,7 @@ title: Academic Portfolio
         </div>
     </li>
 
-    <!-- Award 5 -->
+    <!-- Award 7 -->
     <li style="margin-bottom: 8px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Undergraduate Research Appreciation Award</strong> &middot; UT Arlington Research Institute</span>
