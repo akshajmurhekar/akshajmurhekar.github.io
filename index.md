@@ -471,6 +471,7 @@ title: Academic Portfolio
     @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
 
     body,
+    .markdown-body,
     h1, h2, h3, h4, h5, h6,
     button, input, select, textarea {
         font-family: "Crimson Pro", Georgia, "Times New Roman", serif !important;
