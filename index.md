@@ -931,14 +931,23 @@ title: Academic Portfolio
         color: #0d1117 !important;
     }
 
-    /* Gold highlight for award mentions in publication citations */
+    /* Gold badge for award mentions in publication citations */
     .award-gold {
-        color: #b8860b;
+        display: inline-block;
+        background-color: #b8860b;
+        color: #ffffff;
         font-weight: 700;
+        font-size: 0.85em;
+        padding: 1px 8px;
+        border-radius: 6px;
+        white-space: nowrap;
+        vertical-align: middle;
+        box-shadow: 0 2px 4px rgba(218, 165, 32, 0.3);
     }
 
     [data-theme="dark"] .award-gold {
-        color: #d4af37;
+        background-color: #d4af37;
+        color: #0d1117;
     }
 
     [data-theme="dark"] .pill-gray {
