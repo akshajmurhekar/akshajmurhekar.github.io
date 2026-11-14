@@ -202,7 +202,7 @@ title: Academic Portfolio
             SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
         </div>
         <div style="font-size: 0.95em; color: #24292f; margin-bottom: 8px;">
-            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;"><em>ICMI 2026 (Oral Presentation)</em> &middot; <span class="award-gold">Best Student Paper Runner-Up</span>.</span>
+            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;"><em>ICMI 2026 (Oral Presentation)</em> &middot; <span class="award-gold">Best Student Paper Runner-Up</span></span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
             <a href="https://arxiv.org/pdf/2603.17109.pdf" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">Paper</a>
@@ -922,7 +922,7 @@ title: Academic Portfolio
     }
 
     .pill-gold {
-        background-color: #b8860b;
+        background-color: #d4af37;
         box-shadow: 0 2px 4px rgba(218, 165, 32, 0.3);
     }
 
@@ -934,7 +934,7 @@ title: Academic Portfolio
     /* Gold badge for award mentions in publication citations */
     .award-gold {
         display: inline-block;
-        background-color: #b8860b;
+        background-color: #d4af37;
         color: #ffffff;
         font-weight: 700;
         font-size: 0.85em;
