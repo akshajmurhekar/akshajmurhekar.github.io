@@ -191,8 +191,7 @@ title: Academic Portfolio
             <strong>A. Murhekar</strong>, A. Mishra. <span style="color: #57606a;"><em>EMNLP 2026 (Findings)</em>.</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
-            <a href="https://arxiv.org/abs/2605.27790" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">arXiv Abstract</a>
-            <a href="https://arxiv.org/pdf/2605.27790.pdf" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">PDF</a>
+            <a href="https://arxiv.org/pdf/2605.27790.pdf" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">Paper</a>
             <a href="https://github.com/akshaj-utexas/neuro-symbolic-eeg-to-text" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">Code</a>
         </div>
     </li>
@@ -203,11 +202,10 @@ title: Academic Portfolio
             SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval
         </div>
         <div style="font-size: 0.95em; color: #24292f; margin-bottom: 8px;">
-            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;"><em>ICMI 2026 (Oral Presentation) &middot; Best Student Paper Runner-Up</em>.</span>
+            <strong>A. Murhekar</strong>, C. Liu, A. Mishra, S. Roychowdhury, J. Gwizdka. <span style="color: #57606a;"><em>ICMI 2026 (Oral Presentation)</em> &middot; <span class="award-gold">Best Student Paper Runner-Up</span>.</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
-            <a href="https://arxiv.org/abs/2603.17109" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">arXiv Abstract</a>
-            <a href="https://arxiv.org/pdf/2603.17109.pdf" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">PDF</a>
+            <a href="https://arxiv.org/pdf/2603.17109.pdf" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">Paper</a>
             <a href="https://github.com/akshaj-utexas/efficient-eeg-2-text" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">Code</a>
         </div>
     </li>
@@ -221,8 +219,7 @@ title: Academic Portfolio
             S. Shukla, J. Torres, <strong>A. Murhekar</strong>, C. Liu, A. Mishra, J. Gwizdka, S. Roychowdhury. <span style="color: #57606a;">(2025). <em>Under review at Neural Networks (Elsevier)</em>.</span>
         </div>
         <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 0.85em;">
-            <a href="https://arxiv.org/abs/2502.12048" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">arXiv Abstract</a>
-            <a href="https://arxiv.org/pdf/2502.12048.pdf" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">PDF</a>
+            <a href="https://arxiv.org/pdf/2502.12048.pdf" target="_blank" style="padding: 4px 10px; background-color: #f1f2f4; color: #0366d6; border-radius: 6px; text-decoration: none; font-weight: 500; border: 1px solid #e1e4e8;">Paper</a>
         </div>
     </li>
 </ol>
@@ -276,34 +273,31 @@ title: Academic Portfolio
     </div>
 </div>
 
-## Selected Projects {#projects}
+## Selected Research Projects {#projects}
 
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
     <li style="margin-bottom: 8px;">
-        <strong>Scientific Sycophancy Benchmark:</strong> Engineered an evaluation pipeline uncovering an 85% failure rate where frontier LLMs prioritize helpfulness over physical laws, motivating a verification-aware RAG framework.
+        <strong>Scientific Sycophancy Benchmark:</strong> Injected physically impossible values into 40 battery-science abstracts; models from five families flagged them as skeptical auditors but praised them as synthesis assistants (up to 85% for Gemini 2.5 Flash).
     </li>
     <li style="margin-bottom: 8px;">
         <strong>KV Cache Optimization:</strong> Engineered a PyTorch-based algorithm to reduce Llama-3 system memory usage by 50% during inference.
     </li>
     <li style="margin-bottom: 8px;">
-        <strong>Audio-Visual Source Separation:</strong> Architected a U-Net with visual conditioning to separate target audio sources from mixtures via latent space modulation.
-    </li>
-    <li style="margin-bottom: 8px;">
-        <strong>LLM Fine-tuning (Review Feedback):</strong> Fine-tuned Qwen2.5-1.5B using PEFT and Unsloth on a 46M-token synthetic dataset for high-throughput inference.
+        <strong>LLM Post-Training on Review Feedback:</strong> Fine-tuned Qwen2.5-1.5B using PEFT and Unsloth on a 46M-token synthetic dataset for high-throughput inference.
     </li>
 </ul>
 
-## Awards, Grants & Recognitions {#awards}
+## Awards & Honors {#awards}
 
 <ul style="line-height: 1.7; padding-left: 20px; color: #24292f; margin-bottom: 35px;">
     <!-- Award 1 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Best Student Paper Runner-Up</strong> &middot; ACM ICMI 2026</span>
-            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">Oct 2026</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2026</span>
         </div>
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            Awarded for <em>SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval</em>, presented at ICMI 2026 in Naples, Italy.
+            Awarded for <em>SENSE: Efficient EEG-to-Text via Privacy-Preserving Semantic Retrieval</em> at ICMI 2026.
         </div>
     </li>
 
@@ -311,10 +305,10 @@ title: Academic Portfolio
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>ACM SIGCHI Gary Marsden Travel Award</strong> &middot; ICMI 2026</span>
-            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">Jul 2026</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2026</span>
         </div>
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: #0366d6; text-decoration: none; font-weight: 500;">Awarded by ACM SIGCHI</a> to support attendance and the presentation of my work at ICMI 2026.
+            <a href="https://sigchi.org/resources/gary-marsden-travel-awards/recipients/" target="_blank" rel="noopener" style="color: #0366d6; text-decoration: none; font-weight: 500;">Awarded by ACM SIGCHI</a> to support the oral presentation of SENSE at ICMI 2026.
         </div>
     </li>
 
@@ -325,55 +319,40 @@ title: Academic Portfolio
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2020 &ndash; 2024</span>
         </div>
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            The university's premier undergraduate merit award, covering full tuition and fees for four years based on exceptional academic entry credentials.
+            University-wide merit scholarship covering full tuition for four years of undergraduate study.
         </div>
     </li>
-    
+
     <!-- Award 4 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
-            <span><strong>NSF REU Research Awards (2x Recipient)</strong> &middot; National Science Foundation</span>
+            <span><strong>NSF REU Award (2x Recipient)</strong> &middot; National Science Foundation</span>
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2022 &ndash; 2024</span>
         </div>
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            Funded undergraduate research fellowships supporting two distinct initiatives:
-            <ul style="margin-top: 4px; margin-bottom: 0; padding-left: 20px; list-style-type: circle;">
-                <li><strong>Assistive Robotics (2022–2023):</strong> Developed an outdoor drone navigation system for the visually impaired, which served as a foundational asset for my subsequent appointment at UT Arlington Research Institute.</li>
-                <li><strong>Generative AI Systems (2023–2024):</strong> Developed an early-stage AI framework to convert raw text prompts into educational video content.</li>
-            </ul>
+            <strong>2023:</strong> AI-based educational platform. <strong>2022:</strong> Autonomous research-grade drone.
         </div>
     </li>
 
     <!-- Award 5 -->
     <li style="margin-bottom: 16px;">
         <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
-            <span><strong>NIH Institutional Research Grant Funding</strong> &middot; National Institutes of Health</span>
-            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2023 &ndash; 2024</span>
-        </div>
-        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            Funded a year-long Senior Design initiative where I served as the project lead. Following summer field research with medical staff to identify clinical workflow constraints, I led the full-lifecycle engineering and development of an autonomous medical supply cart, presenting our initial framework at the <a href="https://2023bmesannual.eventscribe.net/fsPopup.asp?PresenterID=1526288&mode=posterPresenterInfo" target="_blank" style="color: #0366d6; text-decoration: none; font-weight: 500;">BMES 2023</a> Annual Meeting in Seattle.
-        </div>
-    </li>
-
-    <!-- Award 6 -->
-    <li style="margin-bottom: 16px;">
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
-            <span><strong>Undergraduate Research Excellence (Rank 3)</strong> &middot; College of Engineering</span>
-            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2023</span>
-        </div>
-        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            Ranked third overall across the entire College of Engineering for competitive undergraduate research project demonstrations, awarded specifically for the engineering design and execution of the assistive navigation drone system.
-        </div>
-    </li>
-
-    <!-- Award 7 -->
-    <li style="margin-bottom: 8px;">
-        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
             <span><strong>Undergraduate Research Appreciation Award</strong> &middot; UT Arlington Research Institute</span>
             <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2024</span>
         </div>
         <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
-            Awarded by the UT Arlington Research Institute in recognition of technical contributions to institutional computer vision, photogrammetry, and robotics projects.
+            Recognized by the UT Arlington Research Institute for contributions to research projects.
+        </div>
+    </li>
+
+    <!-- Award 6 -->
+    <li style="margin-bottom: 8px;">
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline;">
+            <span><strong>Undergraduate Research Rank 3</strong> &middot; College of Engineering</span>
+            <span style="font-size: 0.95em; color: #57606a; font-weight: 500;">2023</span>
+        </div>
+        <div style="font-size: 0.93em; color: #57606a; margin-top: 2px;">
+            Ranked 3rd out of 33 competing REU teams for technical innovation of an autonomous drone system.
         </div>
     </li>
 </ul>
@@ -950,6 +929,16 @@ title: Academic Portfolio
     [data-theme="dark"] .pill-gold {
         background-color: #d4af37;
         color: #0d1117 !important;
+    }
+
+    /* Gold highlight for award mentions in publication citations */
+    .award-gold {
+        color: #b8860b;
+        font-weight: 700;
+    }
+
+    [data-theme="dark"] .award-gold {
+        color: #d4af37;
     }
 
     [data-theme="dark"] .pill-gray {
